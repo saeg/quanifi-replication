@@ -32,6 +32,13 @@ the distinction between Classiq's reference and the local adaptation are in
 No credentials, local NiFi state, internal AI plans, OpenSpec artifacts, or
 ad-hoc explanatory reports belong in this repository.
 
+## Open Quantum route comparison
+
+The [full paired table](experiments/results/open_quantum_route_comparison/README.md)
+behind Table II: the same circuit files sent to IQM's `garnet` through IQM
+Resonance and through Open Quantum at the same time, with both routes' figures
+side by side. The paper prints only the Open Quantum column.
+
 ## Hardware mutation analysis
 
 The [hardware mutation results](experiments/results/grover_hw_mutation_analysis/README.md)
