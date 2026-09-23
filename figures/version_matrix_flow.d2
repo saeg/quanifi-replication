@@ -1,0 +1,94 @@
+# Quanifi — VersionMatrix process group, conceptual view
+#
+# The shape of the canvas built by tools/add_version_matrix_group.py, with the
+# plumbing processors (SplitJson / EvaluateJsonPath) left out: what matters here
+# is the N x M cross, not how a test case becomes flowfile attributes.
+#
+# LAID OUT LANDSCAPE ON PURPOSE. This figure goes in a two-column ACM paper, and
+# in LaTeX the on-screen font size is irrelevant -- what survives is the RATIO of
+# font size to canvas width, because \includegraphics scales the whole image to
+# the column. A portrait canvas has to be shrunk hard to fit the page height,
+# which drags the type down with it. Wide-and-short + large type keeps the labels
+# readable at \textwidth. Do not flip this back to `direction: down` without
+# re-checking the figure in the built PDF.
+#
+# Render:  d2 docs/version_matrix_flow.d2 docs/version_matrix_flow.svg
+# For the paper (vector, no Chromium needed):
+#          rsvg-convert -f pdf docs/version_matrix_flow.svg -o docs/version_matrix_flow.pdf
+
+vars: {
+  d2-config: {
+    layout-engine: dagre
+    pad: 20
+  }
+}
+
+direction: right
+
+classes: {
+  proc: {
+    style: {
+      fill: "#ffffff"
+      stroke: "#8a8f98"
+      stroke-width: 2
+      font-size: 26
+      border-radius: 4
+    }
+  }
+  terminal: {
+    style: {
+      fill: "#f2f3f6"
+      stroke: "#4b5563"
+      stroke-width: 3
+      font-size: 26
+      border-radius: 4
+    }
+  }
+  lane: {
+    style: {
+      fill: "#fbfbfc"
+      stroke: "#c3c7cf"
+      stroke-width: 2
+      stroke-dash: 4
+      font-size: 24
+      border-radius: 6
+    }
+  }
+}
+
+(* -> *)[*].style.stroke: "#4b5563"
+(* -> *)[*].style.stroke-width: 2
+(* -> *)[*].style.font-size: 22
+
+start: "Start" { class: terminal }
+
+cases: "Test cases" { class: proc }
+
+grovers: "Grover builders · N = 4" {
+  class: lane
+  grid-columns: 1
+  qiskit: Qiskit { class: proc }
+  cirq: Cirq { class: proc }
+  qrisp: Qrisp { class: proc }
+  pennylane: PennyLane { class: proc }
+}
+
+sims: "Simulators · M = 5" {
+  class: lane
+  grid-columns: 1
+  aer: "Qiskit Aer" { class: proc }
+  cirq: Cirq { class: proc }
+  qrisp: Qrisp { class: proc }
+  pennylane: PennyLane { class: proc }
+  qsharp: "Q#" { class: proc }
+}
+
+evaluator: "Consensus\nevaluator" { class: proc }
+
+reports: "Reports" { class: terminal }
+
+start -> cases
+cases -> grovers
+grovers -> sims: "N × M =\n20 branches"
+sims -> evaluator
+evaluator -> reports

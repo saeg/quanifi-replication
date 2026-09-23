@@ -1,0 +1,178 @@
+{
+  "job_id": "835020",
+  "device": "Tuna-17",
+  "entries": [
+    {
+      "label": "Cirq@grover-hw-001",
+      "kind": "control",
+      "num_qubits": 2,
+      "qasm_sha256": "63ae3d696226fecde05c7cfffd344fcbf9aa2e3d9c5c3217b9e9bd9fd18e0b35",
+      "attributes": {
+        "grover.marked_state": "11",
+        "grover.gate_count": "12",
+        "grover.expected": "11",
+        "grover.depth": "7",
+        "grover.case_id": "grover-hw-001",
+        "grover.builder": "Cirq",
+        "grover.kind": "control",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "Cirq",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 9,
+      "isa_gate_count": 17,
+      "batch_index": 5,
+      "provider_circuit_job_id": 1441782,
+      "qasm": "// Generated from Cirq v1.6.1\n\nOPENQASM 2.0;\ninclude \"qelib1.inc\";\n\n\n// Qubits: [q(0), q(1)]\nqreg q[2];\n\n\nu3(pi*1.5,pi*1.0,0) q[1];\nu3(pi*1.5,pi*1.0,0) q[0];\ncz q[0],q[1];\nu3(pi*0.5,0,0) q[0];\nu3(pi*0.5,0,0) q[1];\ncz q[0],q[1];\nu3(pi*0.5,pi*1.0,pi*1.0) q[0];\nu3(pi*0.5,pi*1.0,pi*1.0) q[1];\n",
+      "counts": {
+        "00": 964,
+        "10": 34,
+        "01": 20,
+        "11": 6
+      },
+      "shots_done": 1024
+    },
+    {
+      "label": "PennyLane@grover-hw-001",
+      "kind": "control",
+      "num_qubits": 2,
+      "qasm_sha256": "5320d1a485c28003f852fae94378088ded8e0ce22744fbb2b8a227a7b7d01fee",
+      "attributes": {
+        "grover.marked_state": "11",
+        "grover.gate_count": "10",
+        "grover.expected": "11",
+        "grover.depth": "7",
+        "grover.case_id": "grover-hw-001",
+        "grover.builder": "PennyLane",
+        "grover.kind": "control",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "PennyLane",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 6,
+      "isa_gate_count": 11,
+      "batch_index": 6,
+      "provider_circuit_job_id": 1441779,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\nh q[1];\ncz q[0],q[1];\nh q[0];\nz q[1];\nx q[0];\ncx q[0],q[1];\nx q[0];\nz q[1];\nh q[0];\n",
+      "counts": {
+        "00": 13,
+        "10": 18,
+        "01": 34,
+        "11": 959
+      },
+      "shots_done": 1024
+    },
+    {
+      "label": "Qiskit@grover-hw-001",
+      "kind": "control",
+      "num_qubits": 2,
+      "qasm_sha256": "6e1dd3202bbb18b5e4ec96ac1336e77733cb09dc20a677199ca878c83fd6d6e1",
+      "attributes": {
+        "grover.marked_state": "11",
+        "grover.gate_count": "16",
+        "grover.expected": "11",
+        "grover.depth": "11",
+        "grover.case_id": "grover-hw-001",
+        "grover.builder": "Qiskit",
+        "grover.kind": "control",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "Qiskit",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 6,
+      "isa_gate_count": 10,
+      "batch_index": 7,
+      "provider_circuit_job_id": 1441780,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\nh q[1];\nh q[1];\ncx q[0],q[1];\nh q[0];\nx q[0];\nh q[1];\nh q[1];\nx q[1];\nh q[1];\ncx q[0],q[1];\nx q[0];\nh q[0];\nh q[1];\nx q[1];\nh q[1];",
+      "counts": {
+        "00": 9,
+        "10": 18,
+        "01": 28,
+        "11": 969
+      },
+      "shots_done": 1024
+    },
+    {
+      "label": "Qiskit@grover-hw-001@null",
+      "kind": "null",
+      "num_qubits": 2,
+      "qasm_sha256": "6e1dd3202bbb18b5e4ec96ac1336e77733cb09dc20a677199ca878c83fd6d6e1",
+      "attributes": {
+        "grover.marked_state": "11",
+        "grover.gate_count": "16",
+        "grover.expected": "11",
+        "grover.depth": "11",
+        "grover.case_id": "grover-hw-001",
+        "grover.builder": "Qiskit",
+        "grover.kind": "null",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "Qiskit",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 6,
+      "isa_gate_count": 10,
+      "batch_index": 8,
+      "provider_circuit_job_id": 1441781,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\nh q[1];\nh q[1];\ncx q[0],q[1];\nh q[0];\nx q[0];\nh q[1];\nh q[1];\nx q[1];\nh q[1];\ncx q[0],q[1];\nx q[0];\nh q[0];\nh q[1];\nx q[1];\nh q[1];",
+      "counts": {
+        "00": 12,
+        "10": 32,
+        "01": 50,
+        "11": 930
+      },
+      "shots_done": 1024
+    },
+    {
+      "label": "readout@grover-hw-001",
+      "kind": "readout",
+      "num_qubits": 2,
+      "qasm_sha256": "f92814ebeeb59c083e53c7daef1c9d528aba55585abfb81a20110b1c0ee5b1ae",
+      "attributes": {
+        "grover.marked_state": "11",
+        "grover.gate_count": "2",
+        "grover.expected": "11",
+        "grover.depth": "2",
+        "grover.case_id": "grover-hw-001",
+        "grover.builder": "readout",
+        "grover.kind": "readout",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "0",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "readout",
+      "isa_two_qubit_gates": 1,
+      "isa_depth": 2,
+      "isa_gate_count": 5,
+      "batch_index": 9,
+      "provider_circuit_job_id": 1441778,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg meas[2];\nx q[0];\nx q[1];\nbarrier q[0],q[1];\nmeasure q[0] -> meas[0];\nmeasure q[1] -> meas[1];",
+      "counts": {
+        "10": 12,
+        "01": 37,
+        "11": 975
+      },
+      "shots_done": 1024
+    }
+  ],
+  "layout": [
+    1,
+    0,
+    2,
+    4
+  ],
+  "padded_width": 4,
+  "bit_order": "q0_left"
+}

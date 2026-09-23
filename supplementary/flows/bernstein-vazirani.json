@@ -1,0 +1,431 @@
+{
+  "flowContents": {
+    "identifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b",
+    "instanceIdentifier": "9fc474c3-01a0-1000-f204-f183476db084",
+    "name": "RQ1 — Bernstein–Vazirani",
+    "comments": "Recover the configured secret 1011 through phase kickback and measurement.",
+    "position": {
+      "x": 530.0,
+      "y": 80.0
+    },
+    "processGroups": [],
+    "remoteProcessGroups": [],
+    "processors": [
+      {
+        "identifier": "f5c1b4be-1617-379f-98f9-9efcf4a74e86",
+        "instanceIdentifier": "9fc474e7-01a0-1000-c6fd-3eecd94036f3",
+        "name": "Recover secret 1011",
+        "comments": "",
+        "position": {
+          "x": 730.0,
+          "y": 130.0
+        },
+        "type": "QrispBernsteinVazirani",
+        "bundle": {
+          "group": "org.apache.nifi",
+          "artifact": "python-extensions",
+          "version": "0.1.0"
+        },
+        "properties": {
+          "Secret Bitstring": "1011",
+          "Shots": "1024"
+        },
+        "propertyDescriptors": {
+          "Secret Bitstring": {
+            "name": "Secret Bitstring",
+            "displayName": "Secret Bitstring",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Shots": {
+            "name": "Shots",
+            "displayName": "Shots",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          }
+        },
+        "style": {},
+        "schedulingPeriod": "0 sec",
+        "schedulingStrategy": "TIMER_DRIVEN",
+        "executionNode": "ALL",
+        "penaltyDuration": "30 sec",
+        "yieldDuration": "1 sec",
+        "bulletinLevel": "WARN",
+        "runDurationMillis": 0,
+        "concurrentlySchedulableTaskCount": 1,
+        "autoTerminatedRelationships": [],
+        "scheduledState": "ENABLED",
+        "retryCount": 10,
+        "retriedRelationships": [],
+        "backoffMechanism": "PENALIZE_FLOWFILE",
+        "maxBackoffPeriod": "10 mins",
+        "componentType": "PROCESSOR",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      },
+      {
+        "identifier": "99c2c01b-0606-399a-ad15-82a21c0a56a0",
+        "instanceIdentifier": "9fc474da-01a0-1000-1b2c-a1d0159c519a",
+        "name": "One input",
+        "comments": "",
+        "position": {
+          "x": 80.0,
+          "y": 130.0
+        },
+        "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+        "bundle": {
+          "group": "org.apache.nifi",
+          "artifact": "nifi-standard-nar",
+          "version": "2.11.0"
+        },
+        "properties": {
+          "File Size": "0B",
+          "filename": "bv-secret.json",
+          "Batch Size": "1",
+          "Unique FlowFiles": "false",
+          "Mime Type": null,
+          "Custom Text": "{}",
+          "Character Set": "UTF-8",
+          "Data Format": "Text"
+        },
+        "propertyDescriptors": {
+          "File Size": {
+            "name": "File Size",
+            "displayName": "File Size",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "filename": {
+            "name": "filename",
+            "displayName": "filename",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": true
+          },
+          "Batch Size": {
+            "name": "Batch Size",
+            "displayName": "Batch Size",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Unique FlowFiles": {
+            "name": "Unique FlowFiles",
+            "displayName": "Unique FlowFiles",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Mime Type": {
+            "name": "Mime Type",
+            "displayName": "Mime Type",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Custom Text": {
+            "name": "Custom Text",
+            "displayName": "Custom Text",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Character Set": {
+            "name": "Character Set",
+            "displayName": "Character Set",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Data Format": {
+            "name": "Data Format",
+            "displayName": "Data Format",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          }
+        },
+        "style": {},
+        "schedulingPeriod": "1 day",
+        "schedulingStrategy": "TIMER_DRIVEN",
+        "executionNode": "ALL",
+        "penaltyDuration": "30 sec",
+        "yieldDuration": "1 sec",
+        "bulletinLevel": "WARN",
+        "runDurationMillis": 0,
+        "concurrentlySchedulableTaskCount": 1,
+        "autoTerminatedRelationships": [],
+        "scheduledState": "ENABLED",
+        "retryCount": 10,
+        "retriedRelationships": [],
+        "backoffMechanism": "PENALIZE_FLOWFILE",
+        "maxBackoffPeriod": "10 mins",
+        "componentType": "PROCESSOR",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      },
+      {
+        "identifier": "c4dbea14-176c-3a8f-9065-04c5d80c3348",
+        "instanceIdentifier": "9fc47500-01a0-1000-d9ef-21f9a774b0af",
+        "name": "Save result JSON",
+        "comments": "",
+        "position": {
+          "x": 1380.0,
+          "y": 130.0
+        },
+        "type": "org.apache.nifi.processors.standard.PutFile",
+        "bundle": {
+          "group": "org.apache.nifi",
+          "artifact": "nifi-standard-nar",
+          "version": "2.11.0"
+        },
+        "properties": {
+          "Group": null,
+          "Owner": null,
+          "Create Missing Directories": "true",
+          "Permissions": null,
+          "Maximum File Count": null,
+          "Last Modified Time": null,
+          "Directory": "./supplementary-results",
+          "Conflict Resolution Strategy": "replace"
+        },
+        "propertyDescriptors": {
+          "Group": {
+            "name": "Group",
+            "displayName": "Group",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Owner": {
+            "name": "Owner",
+            "displayName": "Owner",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Create Missing Directories": {
+            "name": "Create Missing Directories",
+            "displayName": "Create Missing Directories",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Permissions": {
+            "name": "Permissions",
+            "displayName": "Permissions",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Maximum File Count": {
+            "name": "Maximum File Count",
+            "displayName": "Maximum File Count",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Last Modified Time": {
+            "name": "Last Modified Time",
+            "displayName": "Last Modified Time",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Directory": {
+            "name": "Directory",
+            "displayName": "Directory",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Conflict Resolution Strategy": {
+            "name": "Conflict Resolution Strategy",
+            "displayName": "Conflict Resolution Strategy",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          }
+        },
+        "style": {},
+        "schedulingPeriod": "0 sec",
+        "schedulingStrategy": "TIMER_DRIVEN",
+        "executionNode": "ALL",
+        "penaltyDuration": "30 sec",
+        "yieldDuration": "1 sec",
+        "bulletinLevel": "WARN",
+        "runDurationMillis": 0,
+        "concurrentlySchedulableTaskCount": 1,
+        "autoTerminatedRelationships": [
+          "success",
+          "failure"
+        ],
+        "scheduledState": "ENABLED",
+        "retryCount": 10,
+        "retriedRelationships": [],
+        "backoffMechanism": "PENALIZE_FLOWFILE",
+        "maxBackoffPeriod": "10 mins",
+        "componentType": "PROCESSOR",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      }
+    ],
+    "inputPorts": [],
+    "outputPorts": [],
+    "connections": [
+      {
+        "identifier": "502a1a9c-fd3a-3dec-aafc-5929029a304d",
+        "instanceIdentifier": "9fc4750c-01a0-1000-d105-c4ca277b22ac",
+        "name": "success",
+        "source": {
+          "id": "f5c1b4be-1617-379f-98f9-9efcf4a74e86",
+          "type": "PROCESSOR",
+          "groupId": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b",
+          "name": "Recover secret 1011",
+          "comments": "",
+          "instanceIdentifier": "9fc474e7-01a0-1000-c6fd-3eecd94036f3"
+        },
+        "destination": {
+          "id": "c4dbea14-176c-3a8f-9065-04c5d80c3348",
+          "type": "PROCESSOR",
+          "groupId": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b",
+          "name": "Save result JSON",
+          "comments": "",
+          "instanceIdentifier": "9fc47500-01a0-1000-d9ef-21f9a774b0af"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "success"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      },
+      {
+        "identifier": "ea64cfa7-3f51-32fa-ac76-ba19569bc9a6",
+        "instanceIdentifier": "9fc47520-01a0-1000-89e5-b57ae85378e7",
+        "name": "failure",
+        "source": {
+          "id": "f5c1b4be-1617-379f-98f9-9efcf4a74e86",
+          "type": "PROCESSOR",
+          "groupId": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b",
+          "name": "Recover secret 1011",
+          "comments": "",
+          "instanceIdentifier": "9fc474e7-01a0-1000-c6fd-3eecd94036f3"
+        },
+        "destination": {
+          "id": "6b2e70aa-38fc-3326-9914-a2bc2097a3e9",
+          "type": "FUNNEL",
+          "groupId": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b",
+          "name": "Funnel",
+          "comments": "",
+          "instanceIdentifier": "9fc47516-01a0-1000-2c82-6d0aca513f1d"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "failure"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      },
+      {
+        "identifier": "47acbe1e-b42a-34b9-80ec-3233f5581fde",
+        "instanceIdentifier": "9fc474f5-01a0-1000-773a-4ae20bb20d69",
+        "name": "success",
+        "source": {
+          "id": "99c2c01b-0606-399a-ad15-82a21c0a56a0",
+          "type": "PROCESSOR",
+          "groupId": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b",
+          "name": "One input",
+          "comments": "",
+          "instanceIdentifier": "9fc474da-01a0-1000-1b2c-a1d0159c519a"
+        },
+        "destination": {
+          "id": "f5c1b4be-1617-379f-98f9-9efcf4a74e86",
+          "type": "PROCESSOR",
+          "groupId": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b",
+          "name": "Recover secret 1011",
+          "comments": "",
+          "instanceIdentifier": "9fc474e7-01a0-1000-c6fd-3eecd94036f3"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "success"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      }
+    ],
+    "labels": [
+      {
+        "identifier": "6b6af133-0b27-3a02-898e-ce2cd7f9ab52",
+        "instanceIdentifier": "9fc474cf-01a0-1000-13b8-375f87388ead",
+        "position": {
+          "x": 80.0,
+          "y": 40.0
+        },
+        "label": "Secret 1011",
+        "zIndex": 0,
+        "width": 1650.0,
+        "height": 55.0,
+        "style": {
+          "font-size": "24px",
+          "background-color": "#e8f0f7"
+        },
+        "componentType": "LABEL",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      }
+    ],
+    "funnels": [
+      {
+        "identifier": "6b2e70aa-38fc-3326-9914-a2bc2097a3e9",
+        "instanceIdentifier": "9fc47516-01a0-1000-2c82-6d0aca513f1d",
+        "position": {
+          "x": 890.0,
+          "y": 320.0
+        },
+        "componentType": "FUNNEL",
+        "groupIdentifier": "356ee3d6-7909-32a1-a7ab-3109b72bbc2b"
+      }
+    ],
+    "controllerServices": [],
+    "defaultFlowFileExpiration": "0 sec",
+    "defaultBackPressureObjectThreshold": 10000,
+    "defaultBackPressureDataSizeThreshold": "1 GB",
+    "scheduledState": "ENABLED",
+    "executionEngine": "INHERITED",
+    "maxConcurrentTasks": 1,
+    "statelessFlowTimeout": "1 min",
+    "flowFileConcurrency": "UNBOUNDED",
+    "flowFileOutboundPolicy": "STREAM_WHEN_AVAILABLE",
+    "componentType": "PROCESS_GROUP"
+  },
+  "externalControllerServices": {},
+  "parameterContexts": {},
+  "flowEncodingVersion": "1.0",
+  "parameterProviders": {},
+  "latest": false
+}

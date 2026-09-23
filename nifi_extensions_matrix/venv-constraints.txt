@@ -1,0 +1,26 @@
+# Constraints applied to every per-processor virtual environment NiFi builds
+# for this instance (exported as UV_CONSTRAINT by `just nifi2-start`).
+#
+# NiFi creates each processor venv against the base interpreter named by
+# nifi.python.command, and the base interpreter's packages remain importable.
+# If a processor venv resolves a DIFFERENT build of a compiled package than the
+# base one, the two get mixed at import time and the processor dies at run time
+# with an error that names neither NiFi nor the processor, e.g.
+#
+#     ModuleNotFoundError: No module named 'numpy._core._multiarray_umath'
+#
+# Observed 2026-09-05: base numpy 2.4.6, processor venvs 2.5.2, and every
+# builder failed on its first FlowFile while loading and validating fine.
+# Pinning the shared compiled core to whatever the base interpreter has keeps
+# the two consistent.
+#
+# This pins VERSIONS. The matching ABI problem is separate and is handled by
+# UV_PYTHON in the same recipe: without it uv resolved cp312 wheels for a 3.11
+# interpreter, so the compiled extensions were present but unloadable. Both are
+# needed -- a correct version built for the wrong Python fails identically.
+#
+# Regenerate after changing the project venv:
+#   .venv/bin/python -c "import importlib.metadata as m; \
+#     print('\n'.join(f'{p}=={m.version(p)}' for p in ('numpy','scipy')))"
+numpy==2.4.6
+scipy==1.17.1

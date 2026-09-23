@@ -1,0 +1,628 @@
+{
+  "flowContents": {
+    "identifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+    "instanceIdentifier": "9fc4752a-01a0-1000-d118-ec882578a4de",
+    "name": "RQ1 — Portfolio QAOA",
+    "comments": "Encode three assets as a cost Hamiltonian, optimise a QAOA circuit, and save the sampled distribution.",
+    "position": {
+      "x": 980.0,
+      "y": 80.0
+    },
+    "processGroups": [],
+    "remoteProcessGroups": [],
+    "processors": [
+      {
+        "identifier": "568ccd44-dedd-3ddc-b80b-f4561d4cf1f0",
+        "instanceIdentifier": "9fc4755f-01a0-1000-97d8-385dfbfde673",
+        "name": "Optimise with Qrisp QAOA",
+        "comments": "",
+        "position": {
+          "x": 1380.0,
+          "y": 130.0
+        },
+        "type": "QrispQAOA",
+        "bundle": {
+          "group": "org.apache.nifi",
+          "artifact": "python-extensions",
+          "version": "0.1.0"
+        },
+        "properties": {
+          "Max Iterations": "80",
+          "Initial Parameters": "0.2,0.4,0.6,0.8",
+          "Optimizer": "COBYLA",
+          "Shots": "1024",
+          "Layers": "2",
+          "Random Seed": "17",
+          "Mixer Type": "RX"
+        },
+        "propertyDescriptors": {
+          "Max Iterations": {
+            "name": "Max Iterations",
+            "displayName": "Max Iterations",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Initial Parameters": {
+            "name": "Initial Parameters",
+            "displayName": "Initial Parameters",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Optimizer": {
+            "name": "Optimizer",
+            "displayName": "Optimizer",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Shots": {
+            "name": "Shots",
+            "displayName": "Shots",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Layers": {
+            "name": "Layers",
+            "displayName": "Layers",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Random Seed": {
+            "name": "Random Seed",
+            "displayName": "Random Seed",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Mixer Type": {
+            "name": "Mixer Type",
+            "displayName": "Mixer Type",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          }
+        },
+        "style": {},
+        "schedulingPeriod": "0 sec",
+        "schedulingStrategy": "TIMER_DRIVEN",
+        "executionNode": "ALL",
+        "penaltyDuration": "30 sec",
+        "yieldDuration": "1 sec",
+        "bulletinLevel": "WARN",
+        "runDurationMillis": 0,
+        "concurrentlySchedulableTaskCount": 1,
+        "autoTerminatedRelationships": [],
+        "scheduledState": "ENABLED",
+        "retryCount": 10,
+        "retriedRelationships": [],
+        "backoffMechanism": "PENALIZE_FLOWFILE",
+        "maxBackoffPeriod": "10 mins",
+        "componentType": "PROCESSOR",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "2b99760e-d25d-37a2-be66-173dc88f81ca",
+        "instanceIdentifier": "9fc4754a-01a0-1000-c8a0-c6987a0495b4",
+        "name": "Encode portfolio objective",
+        "comments": "",
+        "position": {
+          "x": 730.0,
+          "y": 130.0
+        },
+        "type": "PortfolioRebalancingProblem",
+        "bundle": {
+          "group": "org.apache.nifi",
+          "artifact": "python-extensions",
+          "version": "0.1.0"
+        },
+        "properties": {
+          "Covariance Matrix": "[[0.05, 0.01, 0.02], [0.01, 0.04, 0.01], [0.02, 0.01, 0.06]]",
+          "Budget": "2",
+          "Risk Factor": "0.5",
+          "Expected Returns": "[0.1, 0.2, 0.15]",
+          "Penalty Factor": "3.0"
+        },
+        "propertyDescriptors": {
+          "Covariance Matrix": {
+            "name": "Covariance Matrix",
+            "displayName": "Covariance Matrix",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Budget": {
+            "name": "Budget",
+            "displayName": "Budget",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Risk Factor": {
+            "name": "Risk Factor",
+            "displayName": "Risk Factor",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Expected Returns": {
+            "name": "Expected Returns",
+            "displayName": "Expected Returns",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Penalty Factor": {
+            "name": "Penalty Factor",
+            "displayName": "Penalty Factor",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          }
+        },
+        "style": {},
+        "schedulingPeriod": "0 sec",
+        "schedulingStrategy": "TIMER_DRIVEN",
+        "executionNode": "ALL",
+        "penaltyDuration": "30 sec",
+        "yieldDuration": "1 sec",
+        "bulletinLevel": "WARN",
+        "runDurationMillis": 0,
+        "concurrentlySchedulableTaskCount": 1,
+        "autoTerminatedRelationships": [],
+        "scheduledState": "ENABLED",
+        "retryCount": 10,
+        "retriedRelationships": [],
+        "backoffMechanism": "PENALIZE_FLOWFILE",
+        "maxBackoffPeriod": "10 mins",
+        "componentType": "PROCESSOR",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "597f4bb0-c09b-3295-ab60-0045e7f8ce92",
+        "instanceIdentifier": "9fc47574-01a0-1000-301f-cdc75692f589",
+        "name": "Save result JSON",
+        "comments": "",
+        "position": {
+          "x": 2030.0,
+          "y": 130.0
+        },
+        "type": "org.apache.nifi.processors.standard.PutFile",
+        "bundle": {
+          "group": "org.apache.nifi",
+          "artifact": "nifi-standard-nar",
+          "version": "2.11.0"
+        },
+        "properties": {
+          "Group": null,
+          "Owner": null,
+          "Create Missing Directories": "true",
+          "Permissions": null,
+          "Maximum File Count": null,
+          "Last Modified Time": null,
+          "Directory": "./supplementary-results",
+          "Conflict Resolution Strategy": "replace"
+        },
+        "propertyDescriptors": {
+          "Group": {
+            "name": "Group",
+            "displayName": "Group",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Owner": {
+            "name": "Owner",
+            "displayName": "Owner",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Create Missing Directories": {
+            "name": "Create Missing Directories",
+            "displayName": "Create Missing Directories",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Permissions": {
+            "name": "Permissions",
+            "displayName": "Permissions",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Maximum File Count": {
+            "name": "Maximum File Count",
+            "displayName": "Maximum File Count",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Last Modified Time": {
+            "name": "Last Modified Time",
+            "displayName": "Last Modified Time",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Directory": {
+            "name": "Directory",
+            "displayName": "Directory",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Conflict Resolution Strategy": {
+            "name": "Conflict Resolution Strategy",
+            "displayName": "Conflict Resolution Strategy",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          }
+        },
+        "style": {},
+        "schedulingPeriod": "0 sec",
+        "schedulingStrategy": "TIMER_DRIVEN",
+        "executionNode": "ALL",
+        "penaltyDuration": "30 sec",
+        "yieldDuration": "1 sec",
+        "bulletinLevel": "WARN",
+        "runDurationMillis": 0,
+        "concurrentlySchedulableTaskCount": 1,
+        "autoTerminatedRelationships": [
+          "success",
+          "failure"
+        ],
+        "scheduledState": "ENABLED",
+        "retryCount": 10,
+        "retriedRelationships": [],
+        "backoffMechanism": "PENALIZE_FLOWFILE",
+        "maxBackoffPeriod": "10 mins",
+        "componentType": "PROCESSOR",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "063a0110-94a4-3d74-ade4-a92d15f1e6f7",
+        "instanceIdentifier": "9fc4753e-01a0-1000-7314-db23505de099",
+        "name": "One input",
+        "comments": "",
+        "position": {
+          "x": 80.0,
+          "y": 130.0
+        },
+        "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+        "bundle": {
+          "group": "org.apache.nifi",
+          "artifact": "nifi-standard-nar",
+          "version": "2.11.0"
+        },
+        "properties": {
+          "File Size": "0B",
+          "filename": "portfolio.json",
+          "Batch Size": "1",
+          "Unique FlowFiles": "false",
+          "Mime Type": null,
+          "Custom Text": "{}",
+          "Character Set": "UTF-8",
+          "Data Format": "Text"
+        },
+        "propertyDescriptors": {
+          "File Size": {
+            "name": "File Size",
+            "displayName": "File Size",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "filename": {
+            "name": "filename",
+            "displayName": "filename",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": true
+          },
+          "Batch Size": {
+            "name": "Batch Size",
+            "displayName": "Batch Size",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Unique FlowFiles": {
+            "name": "Unique FlowFiles",
+            "displayName": "Unique FlowFiles",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Mime Type": {
+            "name": "Mime Type",
+            "displayName": "Mime Type",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Custom Text": {
+            "name": "Custom Text",
+            "displayName": "Custom Text",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Character Set": {
+            "name": "Character Set",
+            "displayName": "Character Set",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          },
+          "Data Format": {
+            "name": "Data Format",
+            "displayName": "Data Format",
+            "identifiesControllerService": false,
+            "sensitive": false,
+            "dynamic": false
+          }
+        },
+        "style": {},
+        "schedulingPeriod": "1 day",
+        "schedulingStrategy": "TIMER_DRIVEN",
+        "executionNode": "ALL",
+        "penaltyDuration": "30 sec",
+        "yieldDuration": "1 sec",
+        "bulletinLevel": "WARN",
+        "runDurationMillis": 0,
+        "concurrentlySchedulableTaskCount": 1,
+        "autoTerminatedRelationships": [],
+        "scheduledState": "ENABLED",
+        "retryCount": 10,
+        "retriedRelationships": [],
+        "backoffMechanism": "PENALIZE_FLOWFILE",
+        "maxBackoffPeriod": "10 mins",
+        "componentType": "PROCESSOR",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      }
+    ],
+    "inputPorts": [],
+    "outputPorts": [],
+    "connections": [
+      {
+        "identifier": "08e267a1-5371-3de9-b2ec-820b14348bff",
+        "instanceIdentifier": "9fc4756a-01a0-1000-719e-e4c81650c71a",
+        "name": "success",
+        "source": {
+          "id": "2b99760e-d25d-37a2-be66-173dc88f81ca",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Encode portfolio objective",
+          "comments": "",
+          "instanceIdentifier": "9fc4754a-01a0-1000-c8a0-c6987a0495b4"
+        },
+        "destination": {
+          "id": "568ccd44-dedd-3ddc-b80b-f4561d4cf1f0",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Optimise with Qrisp QAOA",
+          "comments": "",
+          "instanceIdentifier": "9fc4755f-01a0-1000-97d8-385dfbfde673"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "success"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "cde09491-17ce-3e72-be01-983635107010",
+        "instanceIdentifier": "9fc4759f-01a0-1000-03a1-4ab142dde518",
+        "name": "failure",
+        "source": {
+          "id": "568ccd44-dedd-3ddc-b80b-f4561d4cf1f0",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Optimise with Qrisp QAOA",
+          "comments": "",
+          "instanceIdentifier": "9fc4755f-01a0-1000-97d8-385dfbfde673"
+        },
+        "destination": {
+          "id": "aee2287b-eb9f-38ea-9477-549fd75ddda1",
+          "type": "FUNNEL",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Funnel",
+          "comments": "",
+          "instanceIdentifier": "9fcc211a-01a0-1000-855c-378e605a23fa"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "failure"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "256b68a8-fefa-3d8d-9dc1-ae7d094869cf",
+        "instanceIdentifier": "9fc47595-01a0-1000-3abf-192b59d4b789",
+        "name": "failure",
+        "source": {
+          "id": "2b99760e-d25d-37a2-be66-173dc88f81ca",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Encode portfolio objective",
+          "comments": "",
+          "instanceIdentifier": "9fc4754a-01a0-1000-c8a0-c6987a0495b4"
+        },
+        "destination": {
+          "id": "840c13c7-2e21-3395-b21d-fb97027786a2",
+          "type": "FUNNEL",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Funnel",
+          "comments": "",
+          "instanceIdentifier": "9fc4758c-01a0-1000-648f-e4137e8b8cbd"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "failure"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "1d750841-4ace-3e4f-826f-c68cd91dca23",
+        "instanceIdentifier": "9fc47554-01a0-1000-aadf-5c835f6b2d7a",
+        "name": "success",
+        "source": {
+          "id": "063a0110-94a4-3d74-ade4-a92d15f1e6f7",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "One input",
+          "comments": "",
+          "instanceIdentifier": "9fc4753e-01a0-1000-7314-db23505de099"
+        },
+        "destination": {
+          "id": "2b99760e-d25d-37a2-be66-173dc88f81ca",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Encode portfolio objective",
+          "comments": "",
+          "instanceIdentifier": "9fc4754a-01a0-1000-c8a0-c6987a0495b4"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "success"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "946c4b78-8c39-3d5e-a587-7288fd1503fb",
+        "instanceIdentifier": "9fc4757f-01a0-1000-7007-feaf8c531dd4",
+        "name": "success",
+        "source": {
+          "id": "568ccd44-dedd-3ddc-b80b-f4561d4cf1f0",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Optimise with Qrisp QAOA",
+          "comments": "",
+          "instanceIdentifier": "9fc4755f-01a0-1000-97d8-385dfbfde673"
+        },
+        "destination": {
+          "id": "597f4bb0-c09b-3295-ab60-0045e7f8ce92",
+          "type": "PROCESSOR",
+          "groupId": "a3ca7543-3e38-3bc6-94e1-efb68638ce14",
+          "name": "Save result JSON",
+          "comments": "",
+          "instanceIdentifier": "9fc47574-01a0-1000-301f-cdc75692f589"
+        },
+        "labelIndex": 1,
+        "zIndex": 0,
+        "selectedRelationships": [
+          "success"
+        ],
+        "backPressureObjectThreshold": 10000,
+        "backPressureDataSizeThreshold": "1 GB",
+        "flowFileExpiration": "0 sec",
+        "prioritizers": [],
+        "bends": [],
+        "loadBalanceStrategy": "DO_NOT_LOAD_BALANCE",
+        "loadBalanceCompression": "DO_NOT_COMPRESS",
+        "componentType": "CONNECTION",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      }
+    ],
+    "labels": [
+      {
+        "identifier": "cfe905f6-aff7-3723-b0ca-3f3b636b7cc1",
+        "instanceIdentifier": "9fc47534-01a0-1000-e5d5-5f24c1e82ce7",
+        "position": {
+          "x": 80.0,
+          "y": 40.0
+        },
+        "label": "Encode → optimise → save",
+        "zIndex": 0,
+        "width": 2300.0,
+        "height": 55.0,
+        "style": {
+          "font-size": "24px",
+          "background-color": "#e8f0f7"
+        },
+        "componentType": "LABEL",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      }
+    ],
+    "funnels": [
+      {
+        "identifier": "aee2287b-eb9f-38ea-9477-549fd75ddda1",
+        "instanceIdentifier": "9fcc211a-01a0-1000-855c-378e605a23fa",
+        "position": {
+          "x": 1540.0,
+          "y": 320.0
+        },
+        "componentType": "FUNNEL",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      },
+      {
+        "identifier": "840c13c7-2e21-3395-b21d-fb97027786a2",
+        "instanceIdentifier": "9fc4758c-01a0-1000-648f-e4137e8b8cbd",
+        "position": {
+          "x": 890.0,
+          "y": 320.0
+        },
+        "componentType": "FUNNEL",
+        "groupIdentifier": "a3ca7543-3e38-3bc6-94e1-efb68638ce14"
+      }
+    ],
+    "controllerServices": [],
+    "defaultFlowFileExpiration": "0 sec",
+    "defaultBackPressureObjectThreshold": 10000,
+    "defaultBackPressureDataSizeThreshold": "1 GB",
+    "scheduledState": "ENABLED",
+    "executionEngine": "INHERITED",
+    "maxConcurrentTasks": 1,
+    "statelessFlowTimeout": "1 min",
+    "flowFileConcurrency": "UNBOUNDED",
+    "flowFileOutboundPolicy": "STREAM_WHEN_AVAILABLE",
+    "componentType": "PROCESS_GROUP"
+  },
+  "externalControllerServices": {},
+  "parameterContexts": {},
+  "flowEncodingVersion": "1.0",
+  "parameterProviders": {},
+  "latest": false
+}

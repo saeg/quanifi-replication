@@ -1,0 +1,2775 @@
+{
+  "qiskit_version": "2.3.0",
+  "transpiler_seed": 11,
+  "optimization_level": 3,
+  "basis_gates": [
+    "asm",
+    "cp",
+    "cx",
+    "cz",
+    "delay",
+    "h",
+    "id",
+    "measure",
+    "reset",
+    "rx",
+    "ry",
+    "rz",
+    "s",
+    "sdg",
+    "swap",
+    "t",
+    "tdg",
+    "x",
+    "y",
+    "z"
+  ],
+  "coupling_map_edges": 48,
+  "job_id": "835711",
+  "device": "Tuna-17",
+  "shots": 1024,
+  "layout": [
+    1,
+    0,
+    2,
+    4
+  ],
+  "layout_evidence": {
+    "strategy": "balanced-worst-normalized-two-qubit-v1",
+    "retry_sequence_strategy": "ranked-distinct-physical-sets-v1",
+    "attempt_limit": 3,
+    "candidate_count": 7,
+    "distinct_physical_set_count": 3,
+    "representative_count": 2,
+    "representative_active_widths": [
+      2,
+      4
+    ],
+    "best_observed_two_qubit_gates": [
+      3,
+      119
+    ],
+    "winning_objective": [
+      1.0,
+      119,
+      122,
+      291,
+      298
+    ],
+    "winning_representatives": [
+      {
+        "two_qubit_gates": 3,
+        "depth": 7
+      },
+      {
+        "two_qubit_gates": 119,
+        "depth": 291
+      }
+    ],
+    "winning_source": {
+      "source_rep": 1,
+      "source_seed": 5
+    },
+    "candidate_sequence_sha256": "55bd8302eaac042839b93280654bdfe8bed714f8a57b5813654de0883bf182f8",
+    "candidate_sequence": [
+      {
+        "attempt": 1,
+        "search_rank": 1,
+        "layout": [
+          1,
+          0,
+          2,
+          4
+        ],
+        "physical_qubits": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "max_physical_overlap_with_prior": 0,
+        "objective": [
+          1.0,
+          119,
+          122,
+          291,
+          298
+        ],
+        "representatives": [
+          {
+            "two_qubit_gates": 3,
+            "depth": 7
+          },
+          {
+            "two_qubit_gates": 119,
+            "depth": 291
+          }
+        ],
+        "source": {
+          "source_rep": 1,
+          "source_seed": 5
+        }
+      },
+      {
+        "attempt": 2,
+        "search_rank": 3,
+        "layout": [
+          9,
+          6,
+          3,
+          5
+        ],
+        "physical_qubits": [
+          3,
+          5,
+          6,
+          9
+        ],
+        "max_physical_overlap_with_prior": 0,
+        "objective": [
+          1.0,
+          119,
+          122,
+          291,
+          298
+        ],
+        "representatives": [
+          {
+            "two_qubit_gates": 3,
+            "depth": 7
+          },
+          {
+            "two_qubit_gates": 119,
+            "depth": 291
+          }
+        ],
+        "source": {
+          "source_rep": 1,
+          "source_seed": 19
+        }
+      },
+      {
+        "attempt": 3,
+        "search_rank": 6,
+        "layout": [
+          1,
+          0,
+          15,
+          16
+        ],
+        "physical_qubits": [
+          0,
+          1,
+          15,
+          16
+        ],
+        "max_physical_overlap_with_prior": 2,
+        "objective": [
+          1.0672268907563025,
+          127,
+          130,
+          293,
+          300
+        ],
+        "representatives": [
+          {
+            "two_qubit_gates": 3,
+            "depth": 7
+          },
+          {
+            "two_qubit_gates": 127,
+            "depth": 293
+          }
+        ],
+        "source": {
+          "source_rep": 0,
+          "source_seed": 0
+        }
+      }
+    ],
+    "backend_provenance": {
+      "schema": "quanifi-backend-layout-snapshot/v1",
+      "captured_at": "2026-09-13T05:12:17.883899+00:00",
+      "snapshot_sha256": "871de7c1c53e2ff0428b11f23f676498a7afb6531b3bc86a293adfb5ecf4d5c8",
+      "snapshot": {
+        "device": "Tuna-17",
+        "num_qubits": 17,
+        "dt_seconds": null,
+        "candidate_qubits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9,
+          15,
+          16
+        ],
+        "coupling_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            8,
+            5
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            5
+          ],
+          [
+            9,
+            6
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            13
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            11,
+            13
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            12,
+            8
+          ],
+          [
+            12,
+            9
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            13,
+            10
+          ],
+          [
+            13,
+            11
+          ],
+          [
+            14,
+            11
+          ],
+          [
+            14,
+            12
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            15,
+            12
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            14
+          ],
+          [
+            16,
+            15
+          ]
+        ],
+        "candidate_calibrations": [
+          {
+            "operation": "cp",
+            "qubits": [
+              0,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              1,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              0,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              2,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              4,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              1,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              4,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              2,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              5,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              2,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              5,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              3,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              5,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              9,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              6,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              3,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              6,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              9,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              16,
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cp",
+            "qubits": [
+              15,
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              0,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              1,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              0,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              2,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              4,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              1,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              4,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              2,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              5,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              2,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              5,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              3,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              5,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              9,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              6,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              3,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              6,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              9,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              16,
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cx",
+            "qubits": [
+              15,
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              0,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              1,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              0,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              2,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              4,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              1,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              4,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              2,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              5,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              2,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              5,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              3,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              5,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              9,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              6,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              3,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              6,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              9,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              16,
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "cz",
+            "qubits": [
+              15,
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "delay",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "h",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "id",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "measure",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "reset",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rx",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "ry",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "rz",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "s",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "sdg",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              0,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              1,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              0,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              2,
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              4,
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              1,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              4,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              2,
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              5,
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              2,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              5,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              3,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              5,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              9,
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              6,
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              3,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              6,
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              9,
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              16,
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "swap",
+            "qubits": [
+              15,
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "t",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "tdg",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "x",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "y",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              0
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              1
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              2
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              3
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              4
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              5
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              6
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              9
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              15
+            ],
+            "error": null,
+            "duration_seconds": null
+          },
+          {
+            "operation": "z",
+            "qubits": [
+              16
+            ],
+            "error": null,
+            "duration_seconds": null
+          }
+        ],
+        "software": {
+          "python": "3.11.15",
+          "qiskit": "2.3.0",
+          "qiskit_ibm_runtime": "0.45.1",
+          "iqm_client": "35.0.0"
+        }
+      }
+    },
+    "result_physical_by_implementation": {
+      "unknown": [
+        []
+      ]
+    },
+    "result_physical": [],
+    "active_physical": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "result_measure_error_missing": 20,
+    "result_measure_error_worst": null,
+    "result_measure_error_sum": null,
+    "excluded_result_hits": [],
+    "excluded_active_hits": [],
+    "result_mapping_complete": null,
+    "source": "final-submission-transpilation"
+  },
+  "padded_width": 4,
+  "estimated_usage_seconds": 0.0,
+  "provider": "quantum-inspire",
+  "provider_handle_path": "experiments/results/grover_hw_matrix/manifests/quantum-inspire/835711.qijob.qpy",
+  "provider_handle_sha256": "a2bf24fc24ec6477b555024d4a23ba84a9452b465a05537c410138fc24502917",
+  "provider_backend_type": {
+    "id": 7,
+    "name": "Tuna-17",
+    "infrastructure": "On-premise",
+    "description": "The Tuna-17 backend has 17 transmon qubits in a ninja-star configuration, with 24 flux-tunable couplers connecting nearest neighbors.",
+    "image_id": "1772648307-tuna-17_schematic-svg.svg",
+    "is_hardware": true,
+    "supports_raw_data": true,
+    "features": [],
+    "default_compiler_config": {
+      "mapping": [],
+      "routing": [],
+      "optimization": [],
+      "decomposition": [
+        {
+          "path": "opensquirrel.passes.decomposer.SWAP2CZDecomposer",
+          "method": "decompose",
+          "arguments": {}
+        },
+        {
+          "path": "opensquirrel.passes.decomposer.CZDecomposer",
+          "method": "decompose",
+          "arguments": {}
+        }
+      ]
+    },
+    "gateset": [
+      "I",
+      "Rx",
+      "X",
+      "X90",
+      "mX90",
+      "Ry",
+      "Y",
+      "Y90",
+      "mY90",
+      "Rz",
+      "Z",
+      "S",
+      "T",
+      "Sdag",
+      "Tdag",
+      "H",
+      "CZ",
+      "init",
+      "measure",
+      "reset",
+      "barrier",
+      "wait"
+    ],
+    "topology": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        13,
+        10
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        13,
+        11
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        9
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        14,
+        12
+      ],
+      [
+        12,
+        15
+      ],
+      [
+        15,
+        12
+      ],
+      [
+        16,
+        14
+      ],
+      [
+        14,
+        16
+      ],
+      [
+        16,
+        15
+      ],
+      [
+        15,
+        16
+      ]
+    ],
+    "nqubits": 17,
+    "status": "executing",
+    "messages": {
+      "Tuna-17": {
+        "content": ""
+      }
+    },
+    "default_number_of_shots": 8192,
+    "max_number_of_shots": 131072,
+    "enabled": true,
+    "identifier": "tuna_17",
+    "protocol_version": 2,
+    "job_execution_time_limit": 300.0,
+    "max_jobs_per_batch_job": 5,
+    "batchjobs_per_queue_limit": 5
+  },
+  "native_basis_gates": [
+    "cz",
+    "h",
+    "id",
+    "measure",
+    "reset",
+    "ry",
+    "rz",
+    "s",
+    "sdg",
+    "t",
+    "tdg",
+    "x",
+    "y",
+    "z"
+  ],
+  "submitted_at": "2026-09-13T05:12:18.084114+00:00",
+  "batch_label": "rep4-run-1789276335021",
+  "batch_entry_count": 20,
+  "chunk_index": 1,
+  "chunk_count": 4,
+  "chunk_offset": 5,
+  "chunk_size": 5,
+  "entries": [
+    {
+      "label": "Cirq@grover-hw-001",
+      "kind": "control",
+      "num_qubits": 2,
+      "qasm_sha256": "63ae3d696226fecde05c7cfffd344fcbf9aa2e3d9c5c3217b9e9bd9fd18e0b35",
+      "attributes": {
+        "grover.kind": "control",
+        "grover.builder": "Cirq",
+        "grover.marked_state": "11",
+        "grover.gate_count": "12",
+        "grover.expected": "11",
+        "grover.depth": "7",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "Cirq",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 8,
+      "isa_gate_count": 15,
+      "batch_index": 5,
+      "provider_circuit_job_id": 1443292,
+      "qasm": "// Generated from Cirq v1.6.1\n\nOPENQASM 2.0;\ninclude \"qelib1.inc\";\n\n\n// Qubits: [q(0), q(1)]\nqreg q[2];\n\n\nu3(pi*1.5,pi*1.0,0) q[1];\nu3(pi*1.5,pi*1.0,0) q[0];\ncz q[0],q[1];\nu3(pi*0.5,0,0) q[0];\nu3(pi*0.5,0,0) q[1];\ncz q[0],q[1];\nu3(pi*0.5,pi*1.0,pi*1.0) q[0];\nu3(pi*0.5,pi*1.0,pi*1.0) q[1];\n"
+    },
+    {
+      "label": "PennyLane@grover-hw-001",
+      "kind": "control",
+      "num_qubits": 2,
+      "qasm_sha256": "5320d1a485c28003f852fae94378088ded8e0ce22744fbb2b8a227a7b7d01fee",
+      "attributes": {
+        "grover.kind": "control",
+        "grover.builder": "PennyLane",
+        "grover.marked_state": "11",
+        "grover.gate_count": "10",
+        "grover.expected": "11",
+        "grover.depth": "7",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "PennyLane",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 6,
+      "isa_gate_count": 11,
+      "batch_index": 6,
+      "provider_circuit_job_id": 1443296,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\nh q[1];\ncz q[0],q[1];\nh q[0];\nz q[1];\nx q[0];\ncx q[0],q[1];\nx q[0];\nz q[1];\nh q[0];\n"
+    },
+    {
+      "label": "Qiskit@grover-hw-001",
+      "kind": "control",
+      "num_qubits": 2,
+      "qasm_sha256": "6e1dd3202bbb18b5e4ec96ac1336e77733cb09dc20a677199ca878c83fd6d6e1",
+      "attributes": {
+        "grover.kind": "control",
+        "grover.builder": "Qiskit",
+        "grover.marked_state": "11",
+        "grover.gate_count": "16",
+        "grover.expected": "11",
+        "grover.depth": "11",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "Qiskit",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 6,
+      "isa_gate_count": 11,
+      "batch_index": 7,
+      "provider_circuit_job_id": 1443293,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\nh q[1];\nh q[1];\ncx q[0],q[1];\nh q[0];\nx q[0];\nh q[1];\nh q[1];\nx q[1];\nh q[1];\ncx q[0],q[1];\nx q[0];\nh q[0];\nh q[1];\nx q[1];\nh q[1];"
+    },
+    {
+      "label": "Qiskit@grover-hw-001@null",
+      "kind": "null",
+      "num_qubits": 2,
+      "qasm_sha256": "6e1dd3202bbb18b5e4ec96ac1336e77733cb09dc20a677199ca878c83fd6d6e1",
+      "attributes": {
+        "grover.kind": "null",
+        "grover.builder": "Qiskit",
+        "grover.marked_state": "11",
+        "grover.gate_count": "16",
+        "grover.expected": "11",
+        "grover.depth": "11",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "Qiskit",
+      "isa_two_qubit_gates": 3,
+      "isa_depth": 6,
+      "isa_gate_count": 11,
+      "batch_index": 8,
+      "provider_circuit_job_id": 1443295,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\nh q[1];\nh q[1];\ncx q[0],q[1];\nh q[0];\nx q[0];\nh q[1];\nh q[1];\nx q[1];\nh q[1];\ncx q[0],q[1];\nx q[0];\nh q[0];\nh q[1];\nx q[1];\nh q[1];"
+    },
+    {
+      "label": "readout@grover-hw-001",
+      "kind": "readout",
+      "num_qubits": 2,
+      "qasm_sha256": "f92814ebeeb59c083e53c7daef1c9d528aba55585abfb81a20110b1c0ee5b1ae",
+      "attributes": {
+        "grover.kind": "readout",
+        "grover.builder": "readout",
+        "grover.marked_state": "11",
+        "grover.gate_count": "2",
+        "grover.expected": "11",
+        "grover.depth": "2",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "0",
+        "grover.partition": "palindrome-2q"
+      },
+      "group": "grover-hw-001",
+      "member": "readout",
+      "isa_two_qubit_gates": 1,
+      "isa_depth": 2,
+      "isa_gate_count": 5,
+      "batch_index": 9,
+      "provider_circuit_job_id": 1443294,
+      "qasm": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\ncreg meas[2];\nx q[0];\nx q[1];\nbarrier q[0],q[1];\nmeasure q[0] -> meas[0];\nmeasure q[1] -> meas[1];"
+    }
+  ],
+  "submit_mode": "armed"
+}

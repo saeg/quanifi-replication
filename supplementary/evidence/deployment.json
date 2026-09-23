@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-09-14T11:54:07.079864+00:00",
+  "groups": [
+    {
+      "id": "deutsch-jozsa",
+      "group_id": "9fc47399-01a0-1000-10f5-88cc48611245",
+      "lanes": [
+        {
+          "id": "dj-balanced",
+          "processors": [
+            "9fc473d0-01a0-1000-4c57-b2861b46ccf4",
+            "9fc473ed-01a0-1000-ae51-44fdef59253f",
+            "9fc47418-01a0-1000-af99-7b17f04f0829"
+          ],
+          "connections": [
+            "9fc473ff-01a0-1000-93cd-276d7d5b086d",
+            "9fc47425-01a0-1000-f2b6-61c7788d3c7d"
+          ],
+          "failure_connections": [
+            "9fc47446-01a0-1000-18b5-a45dffe7cf34"
+          ]
+        },
+        {
+          "id": "dj-constant",
+          "processors": [
+            "9fc47469-01a0-1000-9b75-ba3e1467e53d",
+            "9fc47477-01a0-1000-a144-711ae6d21a5e",
+            "9fc47492-01a0-1000-4e88-a135500ff1d9"
+          ],
+          "connections": [
+            "9fc47486-01a0-1000-9935-ad9994738727",
+            "9fc4749f-01a0-1000-278b-415f2b74ba73"
+          ],
+          "failure_connections": [
+            "9fc474b7-01a0-1000-d583-658cb2c220bf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bernstein-vazirani",
+      "group_id": "9fc474c3-01a0-1000-f204-f183476db084",
+      "lanes": [
+        {
+          "id": "bv-secret",
+          "processors": [
+            "9fc474da-01a0-1000-1b2c-a1d0159c519a",
+            "9fc474e7-01a0-1000-c6fd-3eecd94036f3",
+            "9fc47500-01a0-1000-d9ef-21f9a774b0af"
+          ],
+          "connections": [
+            "9fc474f5-01a0-1000-773a-4ae20bb20d69",
+            "9fc4750c-01a0-1000-d105-c4ca277b22ac"
+          ],
+          "failure_connections": [
+            "9fc47520-01a0-1000-89e5-b57ae85378e7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portfolio-qaoa",
+      "group_id": "9fc4752a-01a0-1000-d118-ec882578a4de",
+      "lanes": [
+        {
+          "id": "portfolio",
+          "processors": [
+            "9fc4753e-01a0-1000-7314-db23505de099",
+            "9fc4754a-01a0-1000-c8a0-c6987a0495b4",
+            "9fc4755f-01a0-1000-97d8-385dfbfde673",
+            "9fc47574-01a0-1000-301f-cdc75692f589"
+          ],
+          "connections": [
+            "9fc47554-01a0-1000-aadf-5c835f6b2d7a",
+            "9fc4756a-01a0-1000-719e-e4c81650c71a",
+            "9fc4757f-01a0-1000-7007-feaf8c531dd4"
+          ],
+          "failure_connections": [
+            "9fc47595-01a0-1000-3abf-192b59d4b789",
+            "9fc4759f-01a0-1000-03a1-4ab142dde518"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "max-independent-set",
+      "group_id": "9ff14de8-01a0-1000-2ebe-b763d93fedc3",
+      "lanes": [
+        {
+          "id": "mis-classiq-reference",
+          "processors": [
+            "9ff14dfb-01a0-1000-627f-fc52cabfc52b",
+            "9ff14e04-01a0-1000-9709-c0f407b9dc4a",
+            "9ff14e14-01a0-1000-879e-7700d2d1afe4",
+            "9ff14e26-01a0-1000-8416-82218ea25936"
+          ],
+          "connections": [
+            "9ff14e0d-01a0-1000-8f0f-0ffe2cdc8e60",
+            "9ff14e1e-01a0-1000-d0af-40dfbb93e7ee",
+            "9ff14e2e-01a0-1000-f8c5-ec96e5d3f56f"
+          ],
+          "failure_connections": [
+            "9ff14e3d-01a0-1000-6b4c-4a251379d734",
+            "9ff14e4c-01a0-1000-710f-4c62b0539bb0"
+          ]
+        }
+      ]
+    }
+  ]
+}

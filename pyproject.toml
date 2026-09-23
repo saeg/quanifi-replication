@@ -1,0 +1,66 @@
+[project]
+name = "nifi-quantum-logic"
+version = "0.1.0"
+description = "Quantum circuit execution for Apache NiFi"
+requires-python = ">=3.11"
+dependencies = [
+    "qiskit>=2.0.0,<2.5",
+    "qiskit-aer>=0.13.0",
+    "qiskit-ibm-runtime>=0.20.0",
+    "qiskit-algorithms>=0.4",
+    "qiskit-qasm3-import>=0.6",
+    "pennylane>=0.40",
+    "pennylane-qiskit>=0.40",
+    "cirq>=1.6",
+    "qrisp==0.9.5", # pinned to the tested version; 0.9 renamed DefaultBackend -> QrispSimulatorBackend
+    "ply>=3.11", # cirq.contrib.qasm_import backend
+    "amazon-braket-sdk>=1.119.0",
+    "qdk>=1.30,<1.31",
+    "openfermion>=1.7", # MoleculeHamiltonian
+    "openfermionpyscf>=0.5",
+    "scipy>=1.14",
+    "matplotlib>=3.9",
+    "markitdown[all]",
+    "markitdown-mcp",
+    "django>=5.2,<5.3",
+    "gunicorn>=23,<24",
+    "psycopg[binary]>=3.2,<3.3",
+    "whitenoise>=6.9,<7",
+    "openquantum-sdk", # exploratory Open Quantum (Rigetti) side-study; see generation2/openquantum.py
+    "pyquil>=4.18", # PyquilSimulator / PyquilGroverCircuit (Rigetti Forest SDK, pure-Python PyQVM)
+    "qiskit-quantuminspire>=0.18.2",
+    "quantuminspire>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+# Not a default dependency: iqm-client pulls a large tree that would constrain
+# the pinned qiskit/cirq versions. NiFi installs it per-processor from
+# QrispIQMDevice.ProcessorDetails.dependencies; this extra is for local runs.
+iqm = ["iqm-client>=35.0.0"]
+
+[tool.uv]
+# qrisp==0.9.5 pins jax==0.7.1/jaxlib==0.7.1 exactly; pyquil's rigetti-quax
+# dependency requires jax>=0.10.2. Both packages import and run correctly
+# against jax 0.10.2 in practice (verified: the full qrisp test suite passes
+# unchanged), so the pin is overridden here rather than left unresolvable.
+override-dependencies = [
+    "jax==0.10.2",
+    "jaxlib==0.10.2",
+]
+
+[project.scripts]
+quanifi = "generation2.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src", "generation2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: tests that run real Qrisp simulation (deselect with '-m not slow')",
+]

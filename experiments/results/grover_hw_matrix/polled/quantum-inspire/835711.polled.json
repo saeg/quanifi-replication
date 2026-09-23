@@ -1,0 +1,156 @@
+{
+  "job_id": "835711",
+  "device": "Tuna-17",
+  "layout": [
+    1,
+    0,
+    2,
+    4
+  ],
+  "padded_width": 4,
+  "bit_order": "q0_right",
+  "estimated_usage_seconds": 0.0,
+  "actual_usage_seconds": "",
+  "submitted_at": "2026-09-13T05:12:18.084114+00:00",
+  "completed_at": "2026-09-13T05:13:45.698521+00:00",
+  "calibration_set_id": null,
+  "provider_job_document": {
+    "batch_job_id": 835711,
+    "backend_name": "Tuna-17",
+    "success": true,
+    "system_messages": {}
+  },
+  "chunk_index": 1,
+  "chunk_count": 4,
+  "chunk_offset": 5,
+  "chunk_size": 5,
+  "batch_label": "rep4-run-1789276335021",
+  "batch_entry_count": 20,
+  "entries": [
+    {
+      "label": "Cirq@grover-hw-001",
+      "kind": "control",
+      "attributes": {
+        "grover.kind": "control",
+        "grover.builder": "Cirq",
+        "grover.marked_state": "11",
+        "grover.gate_count": "12",
+        "grover.expected": "11",
+        "grover.depth": "7",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "num_qubits": 2,
+      "batch_index": 5,
+      "shots_done": 1024,
+      "counts": {
+        "00": 9,
+        "01": 27,
+        "10": 53,
+        "11": 935
+      }
+    },
+    {
+      "label": "PennyLane@grover-hw-001",
+      "kind": "control",
+      "attributes": {
+        "grover.kind": "control",
+        "grover.builder": "PennyLane",
+        "grover.marked_state": "11",
+        "grover.gate_count": "10",
+        "grover.expected": "11",
+        "grover.depth": "7",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "num_qubits": 2,
+      "batch_index": 6,
+      "shots_done": 1024,
+      "counts": {
+        "00": 5,
+        "01": 17,
+        "10": 34,
+        "11": 968
+      }
+    },
+    {
+      "label": "Qiskit@grover-hw-001",
+      "kind": "control",
+      "attributes": {
+        "grover.kind": "control",
+        "grover.builder": "Qiskit",
+        "grover.marked_state": "11",
+        "grover.gate_count": "16",
+        "grover.expected": "11",
+        "grover.depth": "11",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "num_qubits": 2,
+      "batch_index": 7,
+      "shots_done": 1024,
+      "counts": {
+        "00": 12,
+        "01": 25,
+        "10": 34,
+        "11": 953
+      }
+    },
+    {
+      "label": "Qiskit@grover-hw-001@null",
+      "kind": "null",
+      "attributes": {
+        "grover.kind": "null",
+        "grover.builder": "Qiskit",
+        "grover.marked_state": "11",
+        "grover.gate_count": "16",
+        "grover.expected": "11",
+        "grover.depth": "11",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "2",
+        "grover.partition": "palindrome-2q"
+      },
+      "num_qubits": 2,
+      "batch_index": 8,
+      "shots_done": 1024,
+      "counts": {
+        "00": 14,
+        "01": 27,
+        "10": 46,
+        "11": 937
+      }
+    },
+    {
+      "label": "readout@grover-hw-001",
+      "kind": "readout",
+      "attributes": {
+        "grover.kind": "readout",
+        "grover.builder": "readout",
+        "grover.marked_state": "11",
+        "grover.gate_count": "2",
+        "grover.expected": "11",
+        "grover.depth": "2",
+        "grover.case_id": "grover-hw-001",
+        "grover.iterations": "1",
+        "grover.two_qubit_gates": "0",
+        "grover.partition": "palindrome-2q"
+      },
+      "num_qubits": 2,
+      "batch_index": 9,
+      "shots_done": 1024,
+      "counts": {
+        "00": 1,
+        "01": 8,
+        "10": 40,
+        "11": 975
+      }
+    }
+  ]
+}

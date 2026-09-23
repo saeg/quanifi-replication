@@ -1,0 +1,138 @@
+[
+  {
+    "id": "9fc473d0-01a0-1000-4c57-b2861b46ccf4",
+    "name": "One input",
+    "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc473ed-01a0-1000-ae51-44fdef59253f",
+    "name": "Evaluate balanced oracle",
+    "type": "QrispDeutschJozsa",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc47418-01a0-1000-af99-7b17f04f0829",
+    "name": "Save result JSON",
+    "type": "org.apache.nifi.processors.standard.PutFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc47469-01a0-1000-9b75-ba3e1467e53d",
+    "name": "One input",
+    "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc47477-01a0-1000-a144-711ae6d21a5e",
+    "name": "Evaluate constant oracle",
+    "type": "QrispDeutschJozsa",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc47492-01a0-1000-4e88-a135500ff1d9",
+    "name": "Save result JSON",
+    "type": "org.apache.nifi.processors.standard.PutFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc474da-01a0-1000-1b2c-a1d0159c519a",
+    "name": "One input",
+    "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc474e7-01a0-1000-c6fd-3eecd94036f3",
+    "name": "Recover secret 1011",
+    "type": "QrispBernsteinVazirani",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc47500-01a0-1000-d9ef-21f9a774b0af",
+    "name": "Save result JSON",
+    "type": "org.apache.nifi.processors.standard.PutFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc4753e-01a0-1000-7314-db23505de099",
+    "name": "One input",
+    "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc4754a-01a0-1000-c8a0-c6987a0495b4",
+    "name": "Encode portfolio objective",
+    "type": "PortfolioRebalancingProblem",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc4755f-01a0-1000-97d8-385dfbfde673",
+    "name": "Optimise with Qrisp QAOA",
+    "type": "QrispQAOA",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9fc47574-01a0-1000-301f-cdc75692f589",
+    "name": "Save result JSON",
+    "type": "org.apache.nifi.processors.standard.PutFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9ff14dfb-01a0-1000-627f-fc52cabfc52b",
+    "name": "One input",
+    "type": "org.apache.nifi.processors.standard.GenerateFlowFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9ff14e04-01a0-1000-9709-c0f407b9dc4a",
+    "name": "Encode independent-set objective",
+    "type": "MaxIndependentSetProblem",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9ff14e14-01a0-1000-879e-7700d2d1afe4",
+    "name": "Optimise graph with Qrisp QAOA",
+    "type": "QrispQAOA",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  },
+  {
+    "id": "9ff14e26-01a0-1000-8416-82218ea25936",
+    "name": "Save result JSON",
+    "type": "org.apache.nifi.processors.standard.PutFile",
+    "state": "STOPPED",
+    "validationStatus": "VALID",
+    "validationErrors": []
+  }
+]

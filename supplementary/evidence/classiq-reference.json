@@ -1,0 +1,88 @@
+{
+  "repository": "https://github.com/Classiq/classiq-library",
+  "commit": "afddcce50118688c24b4513fdf894593a80da8b1",
+  "notebook_url": "https://github.com/Classiq/classiq-library/blob/afddcce50118688c24b4513fdf894593a80da8b1/applications/optimization/max_independent_set/max_independent_set.ipynb",
+  "notebook_sha256": "643e2bb3693ad16ae3df448e2aaee32855e43177bc6ea56046989ff89e1dc26c",
+  "graph_generator": {
+    "function": "networkx.fast_gnp_random_graph",
+    "n": 8,
+    "p": 0.4,
+    "seed": 12345,
+    "networkx_version": "3.6.1"
+  },
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "original_settings": {
+    "backend": "Classiq CombinatorialProblem",
+    "num_layers": 3,
+    "maxiter": 60,
+    "quantile": 0.7
+  },
+  "execution_in_this_artifact": "Quanifi MaxIndependentSetProblem \u2192 QrispQAOA, local simulation; not Classiq cloud execution"
+}

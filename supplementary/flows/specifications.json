@@ -1,0 +1,201 @@
+[
+  {
+    "id": "deutsch-jozsa",
+    "title": "Classify a Boolean oracle",
+    "algorithm": "Deutsch–Jozsa",
+    "summary": "Two configured branches distinguish a constant oracle from a balanced oracle.",
+    "capability": "Configure algorithm behaviour through processor properties and compare two oracle cases.",
+    "lanes": [
+      {
+        "id": "dj-balanced",
+        "label": "Balanced oracle",
+        "steps": [
+          {
+            "type": "QrispDeutschJozsa",
+            "name": "Evaluate balanced oracle",
+            "properties": {
+              "Function Type": "balanced",
+              "Num Qubits": "3",
+              "Balanced Mask": "101",
+              "Shots": "1024"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dj-constant",
+        "label": "Constant oracle",
+        "steps": [
+          {
+            "type": "QrispDeutschJozsa",
+            "name": "Evaluate constant oracle",
+            "properties": {
+              "Function Type": "constant_zero",
+              "Num Qubits": "3",
+              "Shots": "1024"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bernstein-vazirani",
+    "title": "Recover a hidden bitstring",
+    "algorithm": "Bernstein–Vazirani",
+    "summary": "Recover the configured secret 1011 through phase kickback and measurement.",
+    "capability": "Encapsulate circuit construction and local simulation in an interchangeable algorithm component.",
+    "lanes": [
+      {
+        "id": "bv-secret",
+        "label": "Secret 1011",
+        "steps": [
+          {
+            "type": "QrispBernsteinVazirani",
+            "name": "Recover secret 1011",
+            "properties": {
+              "Secret Bitstring": "1011",
+              "Shots": "1024"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "portfolio-qaoa",
+    "title": "Select a two-asset portfolio",
+    "algorithm": "Portfolio QAOA",
+    "summary": "Encode three assets as a cost Hamiltonian, optimise a QAOA circuit, and save the sampled distribution.",
+    "capability": "Connect a classical problem encoder to a hybrid quantum–classical optimiser through a shared Hamiltonian format.",
+    "lanes": [
+      {
+        "id": "portfolio",
+        "label": "Encode → optimise → save",
+        "steps": [
+          {
+            "type": "PortfolioRebalancingProblem",
+            "name": "Encode portfolio objective",
+            "properties": {
+              "Expected Returns": "[0.1, 0.2, 0.15]",
+              "Covariance Matrix": "[[0.05, 0.01, 0.02], [0.01, 0.04, 0.01], [0.02, 0.01, 0.06]]",
+              "Risk Factor": "0.5",
+              "Budget": "2",
+              "Penalty Factor": "3.0"
+            }
+          },
+          {
+            "type": "QrispQAOA",
+            "name": "Optimise with Qrisp QAOA",
+            "properties": {
+              "Layers": "2",
+              "Mixer Type": "RX",
+              "Optimizer": "COBYLA",
+              "Max Iterations": "80",
+              "Shots": "1024",
+              "Initial Parameters": "0.2,0.4,0.6,0.8",
+              "Random Seed": "17"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "max-independent-set",
+    "title": "Find vertices that can coexist",
+    "algorithm": "Maximum independent set",
+    "summary": "Reproduce the Classiq reference graph as a local Quanifi flow: encode its constraints, run QAOA, and check the selected vertices.",
+    "capability": "Compose a graph input, reusable problem encoder, hybrid solver, and saved result using the same Hamiltonian contract as the portfolio flow.",
+    "lanes": [
+      {
+        "id": "mis-classiq-reference",
+        "label": "Classiq reference graph → Quanifi / Qrisp execution",
+        "input": {
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "type": "MaxIndependentSetProblem",
+            "name": "Encode independent-set objective",
+            "properties": {
+              "Edges": "[[0, 2], [0, 4], [0, 6], [0, 7], [1, 2], [1, 4], [1, 5], [2, 4], [2, 5], [2, 6], [3, 4], [3, 5], [3, 6], [5, 6]]",
+              "Num Nodes": "8",
+              "Penalty Factor": "2.0"
+            }
+          },
+          {
+            "type": "QrispQAOA",
+            "name": "Optimise graph with Qrisp QAOA",
+            "properties": {
+              "Layers": "3",
+              "Mixer Type": "RX",
+              "Optimizer": "COBYLA",
+              "Max Iterations": "60",
+              "Shots": "1024",
+              "Initial Parameters": "0.2,0.4,0.6,0.8,1.0,1.2",
+              "Random Seed": "12345"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

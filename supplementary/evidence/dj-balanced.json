@@ -1,0 +1,25 @@
+{
+  "captured_utc": "2026-09-14T11:56:44.863180+00:00",
+  "flowfile_uuid": "bfc9c203-bd07-4c56-a11d-7cda51872688",
+  "connection_id": "9fc47425-01a0-1000-f2b6-61c7788d3c7d",
+  "attributes": {
+    "dj.balanced_mask": "101",
+    "circuit.qasm2": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg qv_0[1];\nqreg qv_1[1];\nqreg qv_2[1];\nqreg anc_0[1];\nh qv_0[0];\nh qv_2[0];\nx anc_0[0];\nh anc_0[0];\ncx qv_0[0],anc_0[0];\nh qv_0[0];\ncx qv_2[0],anc_0[0];\nh qv_2[0];",
+    "circuit.format": "qasm2",
+    "circuit.framework": "qrisp",
+    "sim.shots": "1024",
+    "sim.top_probability": "1.0000",
+    "circuit.num_qubits": "4",
+    "dj.function_type": "balanced",
+    "report.type": "simulation",
+    "circuit.diagram": "       ┌───┐          ┌───┐     \n qv.0: ┤ H ├───────■──┤ H ├─────\n       └───┘       │  └───┘     \n qv.1: ────────────┼────────────\n       ┌───┐       │       ┌───┐\n qv.2: ┤ H ├───────┼────■──┤ H ├\n       ├───┤┌───┐┌─┴─┐┌─┴─┐└───┘\nanc.0: ┤ X ├┤ H ├┤ X ├┤ X ├─────\n       └───┘└───┘└───┘└───┘     ",
+    "sim.top_result": "101",
+    "dj.is_constant": "false",
+    "dj.verdict": "balanced",
+    "sim.bit_order": "q0_left",
+    "sim.framework": "qrisp"
+  },
+  "distribution": {
+    "101": 1.0
+  }
+}

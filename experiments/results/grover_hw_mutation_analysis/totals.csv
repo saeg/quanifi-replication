@@ -1,0 +1,9 @@
+device,rung,num_qubits,executions,distinct_mutants,batches,detected,detected_holm_batch,hw_delta_min,hw_delta_max,identified,baseline_disagreement,ambiguous,no_disagreement,wrong_builder
+garnet,large,2,30,6,5,30,30,0.44140625,0.9462890625,30,0,0,0,0
+garnet,large,4,30,6,5,0,0,0.0107421875,0.083984375,0,0,0,30,0
+garnet,medium,4,30,6,5,0,0,-0.0107421875,0.048828125,0,0,0,30,0
+garnet,small,4,30,6,5,0,0,-0.01953125,0.0390625,0,0,0,30,0
+ibm_kingston,large,2,42,6,7,42,42,0.40625,0.9453125,42,0,0,0,0
+ibm_kingston,large,4,42,6,7,42,42,0.197265625,0.5888671875,24,18,0,0,0
+ibm_kingston,medium,4,42,6,7,34,34,0.0771484375,0.2138671875,19,18,3,2,0
+ibm_kingston,small,4,42,6,7,4,4,-0.001953125,0.1455078125,1,18,3,20,0

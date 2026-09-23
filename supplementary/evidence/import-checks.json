@@ -1,0 +1,30 @@
+[
+  {
+    "flow": "deutsch-jozsa",
+    "imported": true,
+    "all_valid": true,
+    "all_stopped": true,
+    "processor_count": 6
+  },
+  {
+    "flow": "bernstein-vazirani",
+    "imported": true,
+    "all_valid": true,
+    "all_stopped": true,
+    "processor_count": 3
+  },
+  {
+    "flow": "portfolio-qaoa",
+    "imported": true,
+    "all_valid": true,
+    "all_stopped": true,
+    "processor_count": 4
+  },
+  {
+    "flow": "max-independent-set",
+    "imported": true,
+    "all_valid": true,
+    "all_stopped": true,
+    "processor_count": 4
+  }
+]

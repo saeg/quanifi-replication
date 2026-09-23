@@ -1,0 +1,102 @@
+[
+  {
+    "page": "index.html",
+    "width": 1440,
+    "title": "Inspect the supplementary flows \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "deutsch-jozsa.html",
+    "width": 1440,
+    "title": "Deutsch\u2013Jozsa \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "bernstein-vazirani.html",
+    "width": 1440,
+    "title": "Bernstein\u2013Vazirani \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "portfolio-qaoa.html",
+    "width": 1440,
+    "title": "Portfolio QAOA \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "max-independent-set.html",
+    "width": 1440,
+    "title": "Maximum independent set \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "index.html",
+    "width": 390,
+    "title": "Inspect the supplementary flows \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "deutsch-jozsa.html",
+    "width": 390,
+    "title": "Deutsch\u2013Jozsa \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "bernstein-vazirani.html",
+    "width": 390,
+    "title": "Bernstein\u2013Vazirani \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "portfolio-qaoa.html",
+    "width": 390,
+    "title": "Portfolio QAOA \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  },
+  {
+    "page": "max-independent-set.html",
+    "width": 390,
+    "title": "Maximum independent set \u00b7 Quanifi supplementary flows",
+    "h1": 1,
+    "overflow": false,
+    "images": true,
+    "external_http_blocked": true,
+    "expanded_configuration_no_overflow": true
+  }
+]
