@@ -32,12 +32,29 @@ the distinction between Classiq's reference and the local adaptation are in
 No credentials, local NiFi state, internal AI plans, OpenSpec artifacts, or
 ad-hoc explanatory reports belong in this repository.
 
-## Open Quantum route comparison
+## Defect evidence
 
-The [full paired table](experiments/results/open_quantum_route_comparison/README.md)
-behind Table II: the same circuit files sent to IQM's `garnet` through IQM
-Resonance and through Open Quantum at the same time, with both routes' figures
-side by side. The paper prints only the Open Quantum column.
+The per-job counts behind the three defects reported in the paper:
+
+- [`open_quantum_route_comparison/`](experiments/results/open_quantum_route_comparison/README.md):
+  adders, Toffoli and Grover sent to IQM `garnet` directly and through Open
+  Quantum on 17 September (Table III and the Grover route comparison), and the
+  same files again on 25 September
+- [`open_quantum_cepheus_discovery/`](experiments/results/open_quantum_cepheus_discovery/README.md):
+  the Rigetti Cepheus adder runs and the Toffoli probe in which the Open Quantum
+  defect was first seen, and their 25 September rerun
+- [`quantum_inspire_rx/`](experiments/results/quantum_inspire_rx/README.md):
+  the Tuna-17 Rx sign probes (20 and 25 September), the native-gate and Cirq
+  follow-up probes, the 12–13 September diagnostic batches recovered from the
+  Quantum Inspire API, and the adapter's advertised gate list
+
+Recompute every table from the archived counts, without provider access:
+
+```sh
+.venv/bin/python experiments/defect_evidence_tables.py
+```
+
+It writes `experiments/results/defect_evidence_tables.md` and one CSV per table.
 
 ## Hardware mutation analysis
 

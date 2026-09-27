@@ -1,0 +1,69 @@
+{
+  "budget": {
+    "credits_available": 200,
+    "credits_required": 192,
+    "headroom": 0,
+    "reserve": 8
+  },
+  "campaign_id": "oq-sidestudy",
+  "enters_confirmatory_analysis": false,
+  "exploratory": true,
+  "schema": "quanifi-openquantum-report-v1",
+  "stages": [
+    {
+      "circuits": 21,
+      "collected": 21,
+      "key": "oq-qualification",
+      "qualification": {
+        "cells_scored": 21,
+        "eligible_voters": [],
+        "versions": {
+          "cdkm": {
+            "all_correct": false,
+            "cases_correct": 5,
+            "cases_scored": 7,
+            "eligible_voter": false,
+            "mean_p_hat": 0.5095,
+            "min_margin": 0.2402,
+            "modes_stable": 7
+          },
+          "qft": {
+            "all_correct": false,
+            "cases_correct": 1,
+            "cases_scored": 7,
+            "eligible_voter": false,
+            "mean_p_hat": 0.1292,
+            "min_margin": 0.5957,
+            "modes_stable": 7
+          },
+          "semiadder": {
+            "all_correct": false,
+            "cases_correct": 1,
+            "cases_scored": 7,
+            "eligible_voter": false,
+            "mean_p_hat": 0.1359,
+            "min_margin": 0.0195,
+            "modes_stable": 0
+          }
+        }
+      },
+      "stage": 1,
+      "submitted": 21
+    },
+    {
+      "circuits": 96,
+      "collected": 0,
+      "key": "oq-block-carry.break",
+      "stage": 2,
+      "submitted": 0
+    },
+    {
+      "circuits": 75,
+      "collected": 0,
+      "key": "oq-block-gate.remove",
+      "stage": 3,
+      "submitted": 0
+    }
+  ],
+  "study_design_id": "openquantum-rigetti-cepheus-exploratory-v1"
+}

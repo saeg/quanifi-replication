@@ -1,0 +1,299 @@
+{
+  "schema": "quanifi-adder-defect-iqm-direct/v1",
+  "submitted_at": "2026-09-25T20:27:31.892759+00:00",
+  "observed_at": "2026-09-25T20:27:42.475400+00:00",
+  "server": "https://resonance.iqm.tech",
+  "device": "garnet",
+  "job_id": "01a0da40-744c-7570-9ec6-a1b5c154848f",
+  "shots": 512,
+  "circuit_names": [
+    "cirq-grover-hw-000-10",
+    "cirq-grover-hw-001-11",
+    "cirq-grover-hw-002-0111",
+    "cirq-grover-hw-003-0110",
+    "pennylane-grover-hw-000-10",
+    "pennylane-grover-hw-001-11",
+    "pennylane-grover-hw-002-0111",
+    "pennylane-grover-hw-003-0110",
+    "qiskit-grover-hw-000-10",
+    "qiskit-grover-hw-001-11",
+    "qiskit-grover-hw-002-0111",
+    "qiskit-grover-hw-003-0110",
+    "readout-grover-hw-000-10",
+    "readout-grover-hw-001-11",
+    "readout-grover-hw-002-0111",
+    "readout-grover-hw-003-0110"
+  ],
+  "status": "completed",
+  "provider_job_document": {
+    "id": "01a0da40-744c-7570-9ec6-a1b5c154848f",
+    "type": "circuit",
+    "qc": {
+      "id": "065d7600-6c9f-784d-8000-e3fd7c398f60"
+    },
+    "status": "completed",
+    "compilation": {
+      "execution_runtime_estimate_ms": 4088,
+      "execution_runtime_estimate_seconds": 4.088582144,
+      "calibration_set_id": "8e4abb91-9b6d-4cbd-b2ef-fbb8af6e3ae3"
+    },
+    "execution": {
+      "progress": {}
+    },
+    "runtime_ms": 2922,
+    "metrics": {
+      "compilation_seconds": 0.177297,
+      "execution_seconds": 2.744759,
+      "runtime_seconds": 2.922056,
+      "billed_seconds": 3.0
+    },
+    "timeline": [
+      {
+        "source": "iqm-server",
+        "status": "created",
+        "timestamp": "2026-09-25T20:27:32.313435Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "received",
+        "timestamp": "2026-09-25T20:27:32.397832Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "validation_started",
+        "timestamp": "2026-09-25T20:27:32.425470Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "validation_ended",
+        "timestamp": "2026-09-25T20:27:32.461516Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "compilation_started",
+        "timestamp": "2026-09-25T20:27:32.482580Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "compilation_ended",
+        "timestamp": "2026-09-25T20:27:32.659877Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "execution_started",
+        "timestamp": "2026-09-25T20:27:32.783703Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "execution_ended",
+        "timestamp": "2026-09-25T20:27:35.528462Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "post_processing_started",
+        "timestamp": "2026-09-25T20:27:35.530556Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "post_processing_ended",
+        "timestamp": "2026-09-25T20:27:35.551873Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "ready",
+        "timestamp": "2026-09-25T20:27:35.555728Z"
+      },
+      {
+        "source": "iqm-server",
+        "status": "completed",
+        "timestamp": "2026-09-25T20:27:35.848785Z"
+      }
+    ],
+    "artifacts": [
+      {
+        "type": "runtime_estimates"
+      },
+      {
+        "type": "measurements"
+      },
+      {
+        "type": "measurement_counts"
+      }
+    ],
+    "messages": []
+  },
+  "counts": [
+    {
+      "10": 6,
+      "01": 483,
+      "00": 18,
+      "11": 5
+    },
+    {
+      "11": 490,
+      "01": 14,
+      "10": 7,
+      "00": 1
+    },
+    {
+      "1101": 34,
+      "0000": 31,
+      "1100": 29,
+      "1110": 66,
+      "0110": 27,
+      "0101": 39,
+      "0010": 27,
+      "0100": 25,
+      "1010": 28,
+      "1011": 31,
+      "0011": 27,
+      "1111": 30,
+      "0001": 35,
+      "1001": 27,
+      "1000": 30,
+      "0111": 26
+    },
+    {
+      "1001": 34,
+      "0110": 70,
+      "1110": 33,
+      "1000": 22,
+      "0011": 36,
+      "0100": 31,
+      "1101": 36,
+      "0010": 30,
+      "0000": 25,
+      "0001": 26,
+      "1100": 30,
+      "0101": 33,
+      "1111": 37,
+      "0111": 19,
+      "1011": 23,
+      "1010": 27
+    },
+    {
+      "01": 488,
+      "11": 9,
+      "10": 5,
+      "00": 10
+    },
+    {
+      "11": 484,
+      "01": 14,
+      "00": 3,
+      "10": 11
+    },
+    {
+      "1111": 37,
+      "1001": 28,
+      "1101": 32,
+      "0100": 30,
+      "0011": 35,
+      "0001": 36,
+      "1010": 42,
+      "1110": 40,
+      "0000": 34,
+      "1100": 30,
+      "0010": 26,
+      "0110": 37,
+      "0101": 35,
+      "0111": 26,
+      "1011": 28,
+      "1000": 16
+    },
+    {
+      "0110": 61,
+      "0111": 28,
+      "1111": 22,
+      "1000": 27,
+      "0101": 36,
+      "1001": 40,
+      "1101": 34,
+      "1010": 35,
+      "1011": 34,
+      "0010": 29,
+      "0000": 36,
+      "0100": 22,
+      "1110": 26,
+      "0001": 31,
+      "0011": 29,
+      "1100": 22
+    },
+    {
+      "01": 490,
+      "10": 4,
+      "00": 13,
+      "11": 5
+    },
+    {
+      "11": 484,
+      "00": 2,
+      "10": 11,
+      "01": 15
+    },
+    {
+      "0110": 28,
+      "1111": 43,
+      "1110": 134,
+      "0000": 28,
+      "1011": 25,
+      "1000": 20,
+      "0111": 20,
+      "0101": 31,
+      "1001": 24,
+      "1010": 31,
+      "0100": 29,
+      "0001": 16,
+      "0011": 18,
+      "1100": 24,
+      "0010": 18,
+      "1101": 23
+    },
+    {
+      "1010": 27,
+      "0111": 21,
+      "0101": 21,
+      "0110": 177,
+      "1100": 17,
+      "0000": 26,
+      "1011": 28,
+      "1110": 23,
+      "0011": 19,
+      "1001": 26,
+      "0100": 26,
+      "1111": 22,
+      "0001": 19,
+      "1101": 18,
+      "0010": 18,
+      "1000": 24
+    },
+    {
+      "01": 491,
+      "00": 11,
+      "11": 7,
+      "10": 3
+    },
+    {
+      "11": 487,
+      "10": 14,
+      "01": 11
+    },
+    {
+      "1110": 476,
+      "1101": 7,
+      "0110": 9,
+      "1100": 6,
+      "1010": 10,
+      "1111": 3,
+      "0111": 1
+    },
+    {
+      "0110": 480,
+      "0100": 12,
+      "0010": 7,
+      "1110": 4,
+      "0111": 3,
+      "0101": 6
+    }
+  ]
+}

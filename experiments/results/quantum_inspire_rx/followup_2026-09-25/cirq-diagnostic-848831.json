@@ -1,0 +1,126 @@
+{
+  "schema": "qi-rx-followup-cirq-diagnostic/v1",
+  "marked_state": "11",
+  "submitted_at": "2026-09-25T21:05:43.611581+00:00",
+  "observed_at": "2026-09-25T21:05:56.236963+00:00",
+  "backend": "Tuna-17",
+  "job_id": "848831",
+  "shots": 1024,
+  "transpiler": {
+    "optimization_level": 0,
+    "seed_transpiler": 11
+  },
+  "physical_layout": "preserved: initial_layout=[1, 0] (from the original manifest layout)",
+  "per_circuit_job_ids": {
+    "cirq_11": 1474768,
+    "cirq_11_negrx": 1474769,
+    "qiskit_11": 1474770
+  },
+  "source": {
+    "cirq_11": {
+      "repo": "quanifi-qse2027-replication",
+      "path": "experiments/results/grover_hw_matrix_superseded/quantum-inspire-prefix-rx-defect/manifests/835020.manifest.json",
+      "label": "Cirq@grover-hw-001",
+      "field": "entries[].qasm (reconstructed: transpile(qasm2.loads(entries[].qasm), basis_gates=manifest.basis_gates minus 'asm', optimization_level=manifest.optimization_level, seed_transpiler=manifest.transpiler_seed) -- no .qijob.qpy handle survives for this job, so the true post-ISA circuit was never saved; see the module docstring)"
+    },
+    "cirq_11_negrx": {
+      "repo": "quanifi-qse2027-replication",
+      "path": "experiments/results/grover_hw_matrix_superseded/quantum-inspire-prefix-rx-defect/manifests/835020.manifest.json",
+      "label": "Cirq@grover-hw-001",
+      "field": "entries[].qasm (reconstructed: transpile(qasm2.loads(entries[].qasm), basis_gates=manifest.basis_gates minus 'asm', optimization_level=manifest.optimization_level, seed_transpiler=manifest.transpiler_seed) -- no .qijob.qpy handle survives for this job, so the true post-ISA circuit was never saved; see the module docstring), then every rx angle negated locally"
+    },
+    "qiskit_11": {
+      "repo": "quanifi-qse2027-replication",
+      "path": "experiments/results/grover_hw_matrix_superseded/quantum-inspire-prefix-rx-defect/manifests/835020.manifest.json",
+      "label": "Qiskit@grover-hw-001",
+      "field": "entries[].qasm (reconstructed: transpile(qasm2.loads(entries[].qasm), basis_gates=manifest.basis_gates minus 'asm', optimization_level=manifest.optimization_level, seed_transpiler=manifest.transpiler_seed) -- no .qijob.qpy handle survives for this job, so the true post-ISA circuit was never saved; see the module docstring) -- control, expected rx-free"
+    }
+  },
+  "openqasm2": {
+    "cirq_11": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nrz(1.011375719646904) q[0];\nry(-pi/2) q[0];\nrz(0.7694832774135758) q[1];\nry(-pi/2) q[1];\ncp(-pi) q[0],q[1];\nry(pi/2) q[0];\nrz(-pi/2) q[0];\nry(pi/2) q[1];\nrz(-pi/2) q[1];\ncp(-pi) q[0],q[1];\nrx(pi/2) q[0];\nrz(2.3402796042084706) q[0];\nrx(pi/2) q[1];\nrz(2.5821720464417997) q[1];",
+    "cirq_11_negrx": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg qregless[2];\nrz(1.011375719646904) qregless[0];\nry(-pi/2) qregless[0];\nrz(0.7694832774135758) qregless[1];\nry(-pi/2) qregless[1];\ncp(-pi) qregless[0],qregless[1];\nry(pi/2) qregless[0];\nrz(-pi/2) qregless[0];\nry(pi/2) qregless[1];\nrz(-pi/2) qregless[1];\ncp(-pi) qregless[0],qregless[1];\nrx(-pi/2) qregless[0];\nrz(2.3402796042084706) qregless[0];\nrx(-pi/2) qregless[1];\nrz(2.5821720464417997) qregless[1];",
+    "qiskit_11": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\ncx q[0],q[1];\nry(pi/2) q[0];\nry(-pi/2) q[1];\ncx q[0],q[1];\nry(-pi/2) q[0];\nrz(-pi) q[1];"
+  },
+  "cqasm": {
+    "cirq_11": "version 3.0\n\nqubit[2] q\n\nRz(1.0113757) q[0]\nRy(-1.5707963) q[0]\nRz(0.76948328) q[1]\nRy(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRy(1.5707963) q[0]\nRz(-1.5707963) q[0]\nRy(1.5707963) q[1]\nRz(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRx(1.5707963) q[0]\nRz(2.3402796) q[0]\nRx(1.5707963) q[1]\nRz(2.582172) q[1]\n",
+    "cirq_11_negrx": "version 3.0\n\nqubit[2] q\n\nRz(1.0113757) q[0]\nRy(-1.5707963) q[0]\nRz(0.76948328) q[1]\nRy(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRy(1.5707963) q[0]\nRz(-1.5707963) q[0]\nRy(1.5707963) q[1]\nRz(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRx(-1.5707963) q[0]\nRz(2.3402796) q[0]\nRx(-1.5707963) q[1]\nRz(2.582172) q[1]\n",
+    "qiskit_11": "version 3.0\n\nqubit[2] q\n\nH q[0]\nCNOT q[0], q[1]\nRy(1.5707963) q[0]\nRy(-1.5707963) q[1]\nCNOT q[0], q[1]\nRy(-1.5707963) q[0]\nRz(3.1415927) q[1]\n"
+  },
+  "results": [
+    {
+      "circuit": "cirq_11",
+      "counts": {
+        "00": 966,
+        "10": 35,
+        "01": 12,
+        "11": 11
+      },
+      "raw_counts_q0_right": {
+        "00": 966,
+        "01": 35,
+        "10": 12,
+        "11": 11
+      },
+      "shots": 1024,
+      "top_outcome": "00",
+      "p_top": 0.9434,
+      "expected_standard_rx": "11",
+      "expected_negated_rx": "00",
+      "p_standard": 0.0107,
+      "p_negated": 0.9434,
+      "verdict": "matches negated Rx",
+      "marked_state": "11",
+      "contains_rx": true
+    },
+    {
+      "circuit": "cirq_11_negrx",
+      "counts": {
+        "00": 14,
+        "10": 34,
+        "01": 31,
+        "11": 945
+      },
+      "raw_counts_q0_right": {
+        "00": 14,
+        "01": 34,
+        "10": 31,
+        "11": 945
+      },
+      "shots": 1024,
+      "top_outcome": "11",
+      "p_top": 0.9229,
+      "expected_standard_rx": "00",
+      "expected_negated_rx": "11",
+      "p_standard": 0.0137,
+      "p_negated": 0.9229,
+      "verdict": "matches negated Rx",
+      "marked_state": "11",
+      "contains_rx": true
+    },
+    {
+      "circuit": "qiskit_11",
+      "counts": {
+        "00": 12,
+        "10": 26,
+        "01": 31,
+        "11": 955
+      },
+      "raw_counts_q0_right": {
+        "00": 12,
+        "01": 26,
+        "10": 31,
+        "11": 955
+      },
+      "shots": 1024,
+      "top_outcome": "11",
+      "p_top": 0.9326,
+      "expected_standard_rx": "11",
+      "expected_negated_rx": "11",
+      "p_standard": 0.9326,
+      "p_negated": 0.9326,
+      "verdict": "matches standard Rx",
+      "marked_state": "11",
+      "contains_rx": false
+    }
+  ]
+}

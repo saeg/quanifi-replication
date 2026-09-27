@@ -1,0 +1,213 @@
+{
+  "circuits": 12,
+  "credits_total": 12,
+  "enters_confirmatory_analysis": false,
+  "exploratory": true,
+  "failures": 0,
+  "results": [
+    {
+      "label": "cdkm@3+0@run1",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@3+0@run2",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@3+0@run3",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@3+0@run4",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@1+3@run1",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@1+3@run2",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@1+3@run3",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@1+3@run4",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@0+3@run1",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@0+3@run2",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@0+3@run3",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "label": "cdkm@0+3@run4",
+      "message": null,
+      "ok": true,
+      "price": 1,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 1
+        }
+      ],
+      "status": "Completed"
+    }
+  ]
+}

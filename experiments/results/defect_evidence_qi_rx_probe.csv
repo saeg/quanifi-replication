@@ -1,0 +1,6 @@
+circuit,count_0,count_1,p_standard,p_negated
+rx_sign_probe,67,957,0.0654296875,0.9345703125
+rx_sign_probe_neg,922,102,0.099609375,0.900390625
+ry_sign_control,924,100,0.90234375,0.09765625
+rx_pi_control,49,975,0.9521484375,0.9521484375
+idle_control,950,74,0.927734375,0.927734375

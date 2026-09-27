@@ -1,0 +1,126 @@
+{
+  "schema": "qi-rx-followup-cirq-diagnostic/v1",
+  "marked_state": "10",
+  "submitted_at": "2026-09-25T21:05:31.983051+00:00",
+  "observed_at": "2026-09-25T21:05:43.602371+00:00",
+  "backend": "Tuna-17",
+  "job_id": "848830",
+  "shots": 1024,
+  "transpiler": {
+    "optimization_level": 0,
+    "seed_transpiler": 11
+  },
+  "physical_layout": "preserved: initial_layout=[1, 0] (from the original manifest layout)",
+  "per_circuit_job_ids": {
+    "cirq_10": 1474765,
+    "cirq_10_negrx": 1474766,
+    "qiskit_10": 1474767
+  },
+  "source": {
+    "cirq_10": {
+      "repo": "quanifi-qse2027-replication",
+      "path": "experiments/results/grover_hw_matrix_superseded/quantum-inspire-prefix-rx-defect/manifests/835019.manifest.json",
+      "label": "Cirq@grover-hw-000",
+      "field": "entries[].qasm (reconstructed: transpile(qasm2.loads(entries[].qasm), basis_gates=manifest.basis_gates minus 'asm', optimization_level=manifest.optimization_level, seed_transpiler=manifest.transpiler_seed) -- no .qijob.qpy handle survives for this job, so the true post-ISA circuit was never saved; see the module docstring)"
+    },
+    "cirq_10_negrx": {
+      "repo": "quanifi-qse2027-replication",
+      "path": "experiments/results/grover_hw_matrix_superseded/quantum-inspire-prefix-rx-defect/manifests/835019.manifest.json",
+      "label": "Cirq@grover-hw-000",
+      "field": "entries[].qasm (reconstructed: transpile(qasm2.loads(entries[].qasm), basis_gates=manifest.basis_gates minus 'asm', optimization_level=manifest.optimization_level, seed_transpiler=manifest.transpiler_seed) -- no .qijob.qpy handle survives for this job, so the true post-ISA circuit was never saved; see the module docstring), then every rx angle negated locally"
+    },
+    "qiskit_10": {
+      "repo": "quanifi-qse2027-replication",
+      "path": "experiments/results/grover_hw_matrix_superseded/quantum-inspire-prefix-rx-defect/manifests/835019.manifest.json",
+      "label": "Qiskit@grover-hw-000",
+      "field": "entries[].qasm (reconstructed: transpile(qasm2.loads(entries[].qasm), basis_gates=manifest.basis_gates minus 'asm', optimization_level=manifest.optimization_level, seed_transpiler=manifest.transpiler_seed) -- no .qijob.qpy handle survives for this job, so the true post-ISA circuit was never saved; see the module docstring) -- control, expected rx-free"
+    }
+  },
+  "openqasm2": {
+    "cirq_10": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nrz(-2.1257784224452934) q[0];\nry(pi/2) q[0];\nrz(-2.905688383607414) q[1];\nry(pi/2) q[1];\ncp(-pi) q[0],q[1];\nry(pi/2) q[0];\nrz(-pi/2) q[0];\nry(pi/2) q[1];\nrz(-pi/2) q[1];\ncp(-pi) q[0],q[1];\nrx(-pi/2) q[0];\nrz(-1.3348920568125173) q[0];\nrx(pi/2) q[1];\nrz(-2.5866105579393963) q[1];",
+    "cirq_10_negrx": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg qregless[2];\nrz(-2.1257784224452934) qregless[0];\nry(pi/2) qregless[0];\nrz(-2.905688383607414) qregless[1];\nry(pi/2) qregless[1];\ncp(-pi) qregless[0],qregless[1];\nry(pi/2) qregless[0];\nrz(-pi/2) qregless[0];\nry(pi/2) qregless[1];\nrz(-pi/2) qregless[1];\ncp(-pi) qregless[0],qregless[1];\nrx(pi/2) qregless[0];\nrz(-1.3348920568125173) qregless[0];\nrx(-pi/2) qregless[1];\nrz(-2.5866105579393963) qregless[1];",
+    "qiskit_10": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[2];\nh q[0];\nrz(-pi) q[1];\ncx q[0],q[1];\nry(pi/2) q[0];\nrz(-pi) q[1];\nry(-pi/2) q[1];\ncx q[0],q[1];\nry(-pi/2) q[0];\nrz(-pi) q[1];"
+  },
+  "cqasm": {
+    "cirq_10": "version 3.0\n\nqubit[2] q\n\nRz(-2.1257784) q[0]\nRy(1.5707963) q[0]\nRz(-2.9056884) q[1]\nRy(1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRy(1.5707963) q[0]\nRz(-1.5707963) q[0]\nRy(1.5707963) q[1]\nRz(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRx(-1.5707963) q[0]\nRz(-1.3348921) q[0]\nRx(1.5707963) q[1]\nRz(-2.5866106) q[1]\n",
+    "cirq_10_negrx": "version 3.0\n\nqubit[2] q\n\nRz(-2.1257784) q[0]\nRy(1.5707963) q[0]\nRz(-2.9056884) q[1]\nRy(1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRy(1.5707963) q[0]\nRz(-1.5707963) q[0]\nRy(1.5707963) q[1]\nRz(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRx(1.5707963) q[0]\nRz(-1.3348921) q[0]\nRx(-1.5707963) q[1]\nRz(-2.5866106) q[1]\n",
+    "qiskit_10": "version 3.0\n\nqubit[2] q\n\nH q[0]\nRz(3.1415927) q[1]\nCNOT q[0], q[1]\nRy(1.5707963) q[0]\nRz(3.1415927) q[1]\nRy(-1.5707963) q[1]\nCNOT q[0], q[1]\nRy(-1.5707963) q[0]\nRz(3.1415927) q[1]\n"
+  },
+  "results": [
+    {
+      "circuit": "cirq_10",
+      "counts": {
+        "00": 23,
+        "10": 9,
+        "01": 962,
+        "11": 30
+      },
+      "raw_counts_q0_right": {
+        "00": 23,
+        "01": 9,
+        "10": 962,
+        "11": 30
+      },
+      "shots": 1024,
+      "top_outcome": "01",
+      "p_top": 0.9395,
+      "expected_standard_rx": "10",
+      "expected_negated_rx": "01",
+      "p_standard": 0.0088,
+      "p_negated": 0.9395,
+      "verdict": "matches negated Rx",
+      "marked_state": "10",
+      "contains_rx": true
+    },
+    {
+      "circuit": "cirq_10_negrx",
+      "counts": {
+        "00": 22,
+        "10": 985,
+        "01": 7,
+        "11": 10
+      },
+      "raw_counts_q0_right": {
+        "00": 22,
+        "01": 985,
+        "10": 7,
+        "11": 10
+      },
+      "shots": 1024,
+      "top_outcome": "10",
+      "p_top": 0.9619,
+      "expected_standard_rx": "01",
+      "expected_negated_rx": "10",
+      "p_standard": 0.0068,
+      "p_negated": 0.9619,
+      "verdict": "matches negated Rx",
+      "marked_state": "10",
+      "contains_rx": true
+    },
+    {
+      "circuit": "qiskit_10",
+      "counts": {
+        "00": 38,
+        "10": 954,
+        "01": 12,
+        "11": 20
+      },
+      "raw_counts_q0_right": {
+        "00": 38,
+        "01": 954,
+        "10": 12,
+        "11": 20
+      },
+      "shots": 1024,
+      "top_outcome": "10",
+      "p_top": 0.9316,
+      "expected_standard_rx": "10",
+      "expected_negated_rx": "10",
+      "p_standard": 0.9316,
+      "p_negated": 0.9316,
+      "verdict": "matches standard Rx",
+      "marked_state": "10",
+      "contains_rx": false
+    }
+  ]
+}

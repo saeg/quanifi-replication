@@ -1,0 +1,308 @@
+{
+  "cirq_qft-bw1-a0-b0-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000": 116,
+      "001": 108,
+      "010": 13,
+      "011": 7,
+      "100": 5,
+      "101": 6,
+      "110": 131,
+      "111": 126
+    },
+    "credits_charged": 1,
+    "job_id": "bf4b4daa-b55d-4262-a4c4-5e1be68d88ff",
+    "preparation_id": "cfb1a638-ef5d-4a28-8248-8565f5822217"
+  },
+  "cirq_qft-bw1-a0-b1-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000": 136,
+      "001": 133,
+      "010": 11,
+      "011": 8,
+      "100": 8,
+      "101": 3,
+      "110": 98,
+      "111": 115
+    },
+    "credits_charged": 1,
+    "job_id": "479fec2e-1963-4233-901c-94eaaa97486e",
+    "preparation_id": "0ea37054-4aec-4775-9cb4-18c24472748a"
+  },
+  "cirq_qft-bw1-a1-b0-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000": 5,
+      "001": 7,
+      "010": 129,
+      "011": 99,
+      "100": 141,
+      "101": 128,
+      "110": 3
+    },
+    "credits_charged": 1,
+    "job_id": "f11f0808-385d-491a-b187-ade5ebee6b31",
+    "preparation_id": "409eef87-1636-4195-9b8c-2dda08cb5240"
+  },
+  "cirq_qft-bw1-a1-b1-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000": 8,
+      "001": 17,
+      "010": 134,
+      "011": 128,
+      "100": 105,
+      "101": 110,
+      "110": 5,
+      "111": 5
+    },
+    "credits_charged": 1,
+    "job_id": "7531bf61-f3fd-428c-90af-e958a81cb981",
+    "preparation_id": "d0f2a4f0-49d7-4aaa-b6b9-8eb3f21cba0b"
+  },
+  "pennylane_outadder-bw1-a0-b0-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000000": 503,
+      "000001": 3,
+      "000010": 2,
+      "000011": 1,
+      "000100": 2,
+      "001000": 1
+    },
+    "credits_charged": 1,
+    "job_id": "ece4991d-f623-4e32-bdfa-74bfefd52618",
+    "preparation_id": "0b231a58-4b3f-4c6b-960c-9d17e17cd8e2"
+  },
+  "pennylane_outadder-bw1-a0-b1-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000000": 15,
+      "000001": 1,
+      "010000": 483,
+      "010010": 5,
+      "010100": 4,
+      "011000": 3,
+      "110000": 1
+    },
+    "credits_charged": 1,
+    "job_id": "81ad4624-9f3c-4569-8473-9aab3933394b",
+    "preparation_id": "771206b3-b8f0-4916-ba4e-39f7fd267fdd"
+  },
+  "pennylane_outadder-bw1-a1-b0-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000000": 26,
+      "100000": 475,
+      "100001": 4,
+      "100010": 2,
+      "100100": 2,
+      "101000": 3
+    },
+    "credits_charged": 1,
+    "job_id": "a503a407-fba0-49c7-98d7-143f1e94a876",
+    "preparation_id": "681be67a-3d7b-49cc-8e51-bb44e1ff60a6"
+  },
+  "pennylane_outadder-bw1-a1-b1-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000000": 1,
+      "010000": 33,
+      "100000": 46,
+      "100100": 1,
+      "110000": 419,
+      "110001": 3,
+      "110010": 2,
+      "110100": 5,
+      "111000": 2
+    },
+    "credits_charged": 1,
+    "job_id": "2f8f5ffd-d8ff-47a8-8013-170678d8fa21",
+    "preparation_id": "530ee8cc-de5c-44fc-a461-d57ad2f06f8c"
+  },
+  "qiskit_cdkm-bw1-a0-b0-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 484,
+      "0001": 1,
+      "0010": 6,
+      "0100": 6,
+      "0101": 6,
+      "1000": 4,
+      "1011": 1,
+      "1100": 4
+    },
+    "credits_charged": 1,
+    "job_id": "7daca779-f232-40fd-b49e-87040b9d93de",
+    "preparation_id": "a84494f3-4717-4000-abdb-005ddef7e6e8"
+  },
+  "qiskit_cdkm-bw1-a0-b0-whole": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 469,
+      "0010": 5,
+      "0011": 1,
+      "0100": 17,
+      "0101": 7,
+      "1000": 7,
+      "1100": 2,
+      "1101": 4
+    },
+    "credits_charged": 1,
+    "job_id": "aa6ae6e8-b39c-45f5-916a-1bf4249584e3",
+    "preparation_id": "77b70440-fe93-4430-a89e-813560871a27"
+  },
+  "qiskit_cdkm-bw1-a0-b1-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 7,
+      "0001": 13,
+      "0100": 478,
+      "0101": 2,
+      "0110": 5,
+      "1000": 2,
+      "1010": 4,
+      "1100": 1
+    },
+    "credits_charged": 1,
+    "job_id": "b2326bb9-dc90-4b9f-908a-eb951e742645",
+    "preparation_id": "520325d1-074d-448e-8166-9fa4b5ea0ea5"
+  },
+  "qiskit_cdkm-bw1-a0-b1-whole": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 39,
+      "0001": 5,
+      "0010": 1,
+      "0011": 6,
+      "0100": 443,
+      "0101": 3,
+      "0110": 3,
+      "1001": 5,
+      "1010": 2,
+      "1011": 1,
+      "1100": 4
+    },
+    "credits_charged": 1,
+    "job_id": "84727de4-0cef-475e-85ff-7c9fee004c0e",
+    "preparation_id": "e286e5ec-968b-46f1-88d5-b546fb00f57a"
+  },
+  "qiskit_cdkm-bw1-a1-b0-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 1,
+      "0001": 9,
+      "0011": 3,
+      "0100": 2,
+      "0101": 2,
+      "0110": 7,
+      "1000": 1,
+      "1001": 1,
+      "1010": 39,
+      "1011": 9,
+      "1100": 13,
+      "1101": 1,
+      "1110": 422,
+      "1111": 2
+    },
+    "credits_charged": 1,
+    "job_id": "b84ee793-d394-4607-b24f-bfbf093af5e0",
+    "preparation_id": "b662c374-0113-4b26-a8e3-25f84b251615"
+  },
+  "qiskit_cdkm-bw1-a1-b0-whole": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 2,
+      "0001": 9,
+      "0011": 8,
+      "0100": 21,
+      "0101": 10,
+      "0110": 3,
+      "0111": 5,
+      "1000": 6,
+      "1001": 5,
+      "1010": 6,
+      "1011": 14,
+      "1100": 402,
+      "1101": 2,
+      "1110": 16,
+      "1111": 3
+    },
+    "credits_charged": 1,
+    "job_id": "11cc14a5-0e30-458f-ab65-acc4d22a3289",
+    "preparation_id": "a8a629ba-98d8-44b0-9675-6efc82f2b6dd"
+  },
+  "qiskit_cdkm-bw1-a1-b1-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0010": 6,
+      "0011": 1,
+      "0100": 3,
+      "0101": 3,
+      "0110": 1,
+      "0111": 2,
+      "1000": 12,
+      "1010": 455,
+      "1101": 1,
+      "1110": 19,
+      "1111": 9
+    },
+    "credits_charged": 1,
+    "job_id": "ef4dc058-e231-4ba6-a72d-bacccb11baeb",
+    "preparation_id": "2fa21b0e-0dae-4e1f-ac3f-c602235af361"
+  },
+  "qiskit_cdkm-bw1-a1-b1-whole": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 4,
+      "0001": 3,
+      "0010": 11,
+      "0011": 10,
+      "0100": 2,
+      "0101": 14,
+      "0110": 4,
+      "0111": 22,
+      "1000": 39,
+      "1001": 1,
+      "1010": 353,
+      "1011": 5,
+      "1100": 3,
+      "1101": 2,
+      "1110": 10,
+      "1111": 29
+    },
+    "credits_charged": 1,
+    "job_id": "a3cb5342-824e-4992-b655-bad59817f7fe",
+    "preparation_id": "d6c12508-debf-4f91-88a2-db5d7a778247"
+  },
+  "toffoli-decomposed": {
+    "bit_order": "q0_left",
+    "counts": {
+      "010": 30,
+      "100": 7,
+      "110": 472,
+      "111": 3
+    },
+    "credits_charged": 1,
+    "job_id": "7aa36932-6bdd-4bcf-a0d5-58969ab97d42",
+    "preparation_id": "c833acc5-242a-4db5-a5c2-22d2ac50aa0e"
+  },
+  "toffoli-raw": {
+    "bit_order": "q0_left",
+    "counts": {
+      "000": 1,
+      "001": 2,
+      "010": 18,
+      "011": 6,
+      "100": 19,
+      "101": 15,
+      "110": 21,
+      "111": 430
+    },
+    "credits_charged": 1,
+    "job_id": "03387733-63a1-4a7a-81d2-0a35f4df199f",
+    "preparation_id": "1bd2aa29-bf1c-41c1-be27-41d3315b00f0"
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "cirq-grover-hw-000-10": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 503,
+      "01": 1,
+      "10": 8
+    },
+    "credits_charged": 1,
+    "job_id": "3e7d384b-e4b6-4e2a-ac2e-698e6ee808df",
+    "preparation_id": "ab5655cd-f051-47c7-b09b-9cb3a258b0f2"
+  },
+  "cirq-grover-hw-001-11": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 507,
+      "01": 2,
+      "10": 3
+    },
+    "credits_charged": 1,
+    "job_id": "5b1f5517-1ca6-4e40-ae59-a5e9fd5ff9ba",
+    "preparation_id": "465567e8-f25f-407d-bfe0-6cbe545e3b6d"
+  },
+  "cirq-grover-hw-002-0111": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 116,
+      "0001": 8,
+      "0010": 28,
+      "0011": 1,
+      "0100": 108,
+      "0101": 13,
+      "0110": 41,
+      "0111": 4,
+      "1000": 60,
+      "1001": 13,
+      "1010": 25,
+      "1011": 7,
+      "1100": 53,
+      "1101": 5,
+      "1110": 26,
+      "1111": 4
+    },
+    "credits_charged": 1,
+    "job_id": "d7b1435a-420c-484c-a251-4c5d8bbfca9b",
+    "preparation_id": "9f54e0f1-9ffd-467a-b835-d5f0d92c734b"
+  },
+  "cirq-grover-hw-003-0110": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 104,
+      "0001": 6,
+      "0010": 78,
+      "0011": 4,
+      "0100": 110,
+      "0101": 5,
+      "0110": 82,
+      "0111": 3,
+      "1000": 28,
+      "1001": 4,
+      "1010": 21,
+      "1011": 9,
+      "1100": 33,
+      "1101": 2,
+      "1110": 19,
+      "1111": 4
+    },
+    "credits_charged": 1,
+    "job_id": "36919517-ca01-417d-8f31-288d71459351",
+    "preparation_id": "015e8b62-3587-4cfc-b208-d85403671ddb"
+  },
+  "pennylane-grover-hw-000-10": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 11,
+      "01": 1,
+      "10": 489,
+      "11": 11
+    },
+    "credits_charged": 1,
+    "job_id": "b4f3de9c-0e5c-4cd5-adc1-a3e29de687e2",
+    "preparation_id": "dbdb9e4e-867e-42d3-a4be-dd8832831145"
+  },
+  "pennylane-grover-hw-001-11": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 4,
+      "01": 17,
+      "10": 24,
+      "11": 467
+    },
+    "credits_charged": 1,
+    "job_id": "0f82faf3-4f6c-4eba-8cbf-f426a5e636f9",
+    "preparation_id": "52c1d72e-0d0e-4793-b1a7-40186429bac7"
+  },
+  "pennylane-grover-hw-002-0111": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 26,
+      "0001": 29,
+      "0010": 28,
+      "0011": 31,
+      "0100": 26,
+      "0101": 31,
+      "0110": 46,
+      "0111": 27,
+      "1000": 34,
+      "1001": 47,
+      "1010": 32,
+      "1011": 31,
+      "1100": 41,
+      "1101": 31,
+      "1110": 27,
+      "1111": 25
+    },
+    "credits_charged": 1,
+    "job_id": "42b680cf-969f-46c1-bc06-a0a0ddbd96d9",
+    "preparation_id": "5760bde3-3a86-4bc8-8b1b-36eef0db6d65"
+  },
+  "pennylane-grover-hw-003-0110": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 38,
+      "0001": 23,
+      "0010": 39,
+      "0011": 46,
+      "0100": 39,
+      "0101": 29,
+      "0110": 26,
+      "0111": 25,
+      "1000": 33,
+      "1001": 36,
+      "1010": 18,
+      "1011": 35,
+      "1100": 37,
+      "1101": 23,
+      "1110": 32,
+      "1111": 33
+    },
+    "credits_charged": 1,
+    "job_id": "209dd22e-3739-4298-8570-e25d2b1ee2c2",
+    "preparation_id": "b45f8a1f-8277-4807-8331-170010b04971"
+  },
+  "qiskit-grover-hw-000-10": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 6,
+      "01": 3,
+      "10": 491,
+      "11": 12
+    },
+    "credits_charged": 1,
+    "job_id": "262e42bc-1506-4c34-8419-5c9ede92fdb3",
+    "preparation_id": "452d78e4-a5a1-446c-8bfd-4e866d71cd5e"
+  },
+  "qiskit-grover-hw-001-11": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 4,
+      "01": 15,
+      "10": 14,
+      "11": 479
+    },
+    "credits_charged": 1,
+    "job_id": "75bb7a71-e7fe-4c27-bb69-03ccd63060fa",
+    "preparation_id": "bd506c05-3be3-4d09-a03a-9abeea926050"
+  },
+  "qiskit-grover-hw-002-0111": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 39,
+      "0001": 28,
+      "0010": 19,
+      "0011": 38,
+      "0100": 34,
+      "0101": 30,
+      "0110": 29,
+      "0111": 34,
+      "1000": 28,
+      "1001": 31,
+      "1010": 48,
+      "1011": 30,
+      "1100": 32,
+      "1101": 23,
+      "1110": 37,
+      "1111": 32
+    },
+    "credits_charged": 1,
+    "job_id": "4c6d62cf-8aef-45ee-bbd1-5018e7740f2b",
+    "preparation_id": "d80f2c1b-d281-4ba7-978a-b8b91106adf2"
+  },
+  "qiskit-grover-hw-003-0110": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0000": 27,
+      "0001": 37,
+      "0010": 45,
+      "0011": 25,
+      "0100": 34,
+      "0101": 29,
+      "0110": 36,
+      "0111": 28,
+      "1000": 24,
+      "1001": 31,
+      "1010": 29,
+      "1011": 26,
+      "1100": 43,
+      "1101": 30,
+      "1110": 36,
+      "1111": 32
+    },
+    "credits_charged": 1,
+    "job_id": "50e39907-10b2-4adc-a8c8-148f78be4906",
+    "preparation_id": "c1fc6f52-574f-4e1f-93ec-4a82caa4cd69"
+  },
+  "readout-grover-hw-000-10": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 9,
+      "10": 502,
+      "11": 1
+    },
+    "credits_charged": 1,
+    "job_id": "2a46358f-7ca7-4a49-974a-cb8237fa5293",
+    "preparation_id": "88110a14-29c7-47be-b4d5-52f19cef00f2"
+  },
+  "readout-grover-hw-001-11": {
+    "bit_order": "q0_left",
+    "counts": {
+      "00": 2,
+      "01": 25,
+      "10": 12,
+      "11": 473
+    },
+    "credits_charged": 1,
+    "job_id": "967fc6c2-948e-4fe4-b86b-425ae78401f8",
+    "preparation_id": "3f4907a5-eb2f-4ac4-a8d5-5a2a531e7b9b"
+  },
+  "readout-grover-hw-002-0111": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0011": 10,
+      "0101": 16,
+      "0110": 8,
+      "0111": 477,
+      "1111": 1
+    },
+    "credits_charged": 1,
+    "job_id": "0c0df2da-cba2-45c3-81d9-cdbc3b0d2c62",
+    "preparation_id": "316506b8-001a-45e1-9902-9e0e64155c16"
+  },
+  "readout-grover-hw-003-0110": {
+    "bit_order": "q0_left",
+    "counts": {
+      "0010": 16,
+      "0100": 13,
+      "0110": 471,
+      "0111": 9,
+      "1110": 3
+    },
+    "credits_charged": 1,
+    "job_id": "ac65751d-dba8-4f04-8488-f354c7fb18dd",
+    "preparation_id": "7039872c-1791-4a5c-845a-561618e7d830"
+  }
+}

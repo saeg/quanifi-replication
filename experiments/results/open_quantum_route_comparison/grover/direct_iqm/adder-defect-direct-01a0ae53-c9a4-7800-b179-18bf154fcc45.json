@@ -1,0 +1,293 @@
+{
+  "schema": "quanifi-adder-defect-iqm-direct/v1",
+  "submitted_at": "2026-09-17T07:45:21.207780+00:00",
+  "observed_at": "2026-09-17T07:45:32.028263+00:00",
+  "server": "https://resonance.iqm.tech",
+  "device": "garnet",
+  "job_id": "01a0ae53-c9a4-7800-b179-18bf154fcc45",
+  "shots": 512,
+  "circuit_names": [
+    "cirq-grover-hw-000-10",
+    "cirq-grover-hw-001-11",
+    "cirq-grover-hw-002-0111",
+    "cirq-grover-hw-003-0110",
+    "pennylane-grover-hw-000-10",
+    "pennylane-grover-hw-001-11",
+    "pennylane-grover-hw-002-0111",
+    "pennylane-grover-hw-003-0110",
+    "qiskit-grover-hw-000-10",
+    "qiskit-grover-hw-001-11",
+    "qiskit-grover-hw-002-0111",
+    "qiskit-grover-hw-003-0110",
+    "readout-grover-hw-000-10",
+    "readout-grover-hw-001-11",
+    "readout-grover-hw-002-0111",
+    "readout-grover-hw-003-0110"
+  ],
+  "status": "completed",
+  "provider_job_document": {
+    "id": "01a0ae53-c9a4-7800-b179-18bf154fcc45",
+    "type": "circuit",
+    "qc": {
+      "id": "065d7600-6c9f-784d-8000-e3fd7c398f60"
+    },
+    "status": "completed",
+    "compilation": {
+      "execution_runtime_estimate_ms": 4088,
+      "calibration_set_id": "149b0089-909e-46d0-badf-842d1d57fce8"
+    },
+    "execution": {
+      "progress": {}
+    },
+    "runtime_ms": 3143,
+    "timeline": [
+      {
+        "source": "iqm-server",
+        "status": "created",
+        "timestamp": "2026-09-17T07:45:21.840619Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "received",
+        "timestamp": "2026-09-17T07:45:21.980780Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "validation_started",
+        "timestamp": "2026-09-17T07:45:22.002603Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "validation_ended",
+        "timestamp": "2026-09-17T07:45:22.035425Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "compilation_started",
+        "timestamp": "2026-09-17T07:45:22.056471Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "compilation_ended",
+        "timestamp": "2026-09-17T07:45:22.445662Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "execution_started",
+        "timestamp": "2026-09-17T07:45:22.760425Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "execution_ended",
+        "timestamp": "2026-09-17T07:45:25.514532Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "post_processing_started",
+        "timestamp": "2026-09-17T07:45:25.515765Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "post_processing_ended",
+        "timestamp": "2026-09-17T07:45:25.526275Z"
+      },
+      {
+        "source": "iqm-station-control",
+        "status": "ready",
+        "timestamp": "2026-09-17T07:45:25.527150Z"
+      },
+      {
+        "source": "iqm-server",
+        "status": "completed",
+        "timestamp": "2026-09-17T07:45:26.523078Z"
+      }
+    ],
+    "artifacts": [
+      {
+        "type": "runtime_estimates"
+      },
+      {
+        "type": "measurements"
+      },
+      {
+        "type": "measurement_counts"
+      }
+    ],
+    "messages": []
+  },
+  "counts": [
+    {
+      "01": 477,
+      "00": 19,
+      "11": 7,
+      "10": 9
+    },
+    {
+      "11": 483,
+      "10": 21,
+      "01": 8
+    },
+    {
+      "0100": 24,
+      "0010": 33,
+      "0001": 30,
+      "1010": 29,
+      "0110": 32,
+      "0000": 15,
+      "1101": 41,
+      "0011": 42,
+      "0111": 45,
+      "1100": 26,
+      "1001": 25,
+      "1111": 25,
+      "0101": 32,
+      "1011": 28,
+      "1110": 50,
+      "1000": 35
+    },
+    {
+      "1010": 31,
+      "0001": 26,
+      "1001": 39,
+      "1111": 24,
+      "1000": 29,
+      "1100": 24,
+      "0110": 39,
+      "0010": 27,
+      "1101": 29,
+      "0011": 28,
+      "0100": 30,
+      "1110": 36,
+      "0101": 36,
+      "0111": 42,
+      "1011": 33,
+      "0000": 39
+    },
+    {
+      "01": 467,
+      "00": 27,
+      "10": 7,
+      "11": 11
+    },
+    {
+      "01": 9,
+      "11": 484,
+      "10": 17,
+      "00": 2
+    },
+    {
+      "1001": 37,
+      "1111": 28,
+      "1100": 27,
+      "1011": 34,
+      "0001": 30,
+      "0010": 30,
+      "1101": 25,
+      "1110": 63,
+      "0100": 31,
+      "1010": 32,
+      "0111": 27,
+      "0110": 29,
+      "0000": 21,
+      "0101": 37,
+      "0011": 33,
+      "1000": 28
+    },
+    {
+      "1011": 30,
+      "0000": 32,
+      "0100": 35,
+      "0011": 24,
+      "1010": 29,
+      "1100": 26,
+      "0101": 49,
+      "0110": 66,
+      "0010": 31,
+      "0001": 39,
+      "0111": 29,
+      "1111": 13,
+      "1110": 29,
+      "1000": 24,
+      "1101": 30,
+      "1001": 26
+    },
+    {
+      "01": 476,
+      "10": 7,
+      "11": 7,
+      "00": 22
+    },
+    {
+      "11": 476,
+      "01": 16,
+      "10": 19,
+      "00": 1
+    },
+    {
+      "1000": 26,
+      "0000": 19,
+      "0110": 36,
+      "1101": 34,
+      "1100": 38,
+      "1001": 26,
+      "1010": 45,
+      "1111": 42,
+      "1110": 96,
+      "1011": 29,
+      "0001": 14,
+      "0111": 24,
+      "0010": 16,
+      "0011": 22,
+      "0101": 20,
+      "0100": 25
+    },
+    {
+      "1111": 36,
+      "1010": 36,
+      "0001": 24,
+      "0000": 19,
+      "0110": 74,
+      "1100": 31,
+      "1110": 36,
+      "0010": 24,
+      "0011": 36,
+      "1000": 25,
+      "1101": 37,
+      "1011": 27,
+      "1001": 21,
+      "0111": 34,
+      "0100": 23,
+      "0101": 29
+    },
+    {
+      "01": 484,
+      "11": 12,
+      "00": 12,
+      "10": 4
+    },
+    {
+      "11": 490,
+      "01": 11,
+      "10": 11
+    },
+    {
+      "1110": 472,
+      "1111": 11,
+      "0111": 1,
+      "1010": 5,
+      "0100": 1,
+      "0110": 8,
+      "1100": 11,
+      "0101": 1,
+      "1101": 2
+    },
+    {
+      "0110": 479,
+      "0100": 12,
+      "0111": 7,
+      "0010": 7,
+      "0101": 3,
+      "1110": 4
+    }
+  ]
+}

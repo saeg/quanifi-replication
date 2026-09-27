@@ -1,0 +1,38 @@
+{
+  "device": "Tuna-17",
+  "advertised_by_qiskit_quantuminspire": [
+    "asm",
+    "cp",
+    "cx",
+    "cz",
+    "delay",
+    "h",
+    "id",
+    "measure",
+    "reset",
+    "rx",
+    "ry",
+    "rz",
+    "s",
+    "sdg",
+    "swap",
+    "t",
+    "tdg",
+    "x",
+    "y",
+    "z"
+  ],
+  "layout": [
+    1,
+    0,
+    2,
+    4
+  ],
+  "shots": 1024,
+  "submitted_at": "2026-09-12T14:31:37.906784+00:00",
+  "transpiler": {
+    "qiskit_version": "2.3.1",
+    "optimization_level": 3,
+    "seed": 11
+  }
+}

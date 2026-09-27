@@ -1,0 +1,361 @@
+{
+  "source_manifest": "quanifi-replication/experiments/results/grover_hw_matrix/manifests/iqm/01a09c0b-5de1-7dd2-94d9-5a2946237377.manifest.json",
+  "basis": [
+    "h",
+    "x",
+    "cx",
+    "rz"
+  ],
+  "rows": [
+    {
+      "name": "cirq-grover-hw-000-10",
+      "builder": "Cirq",
+      "kind": "control",
+      "source_label": "Cirq@grover-hw-000",
+      "source_qasm_sha256": "a1e639bd55e7f9ffc45710956ac0b17840444087e79b80b09a13d7b2ca31087d",
+      "expected_marked_state": "10",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "10",
+      "num_qubits": 2,
+      "gate_counts": {
+        "rz": 42,
+        "h": 16,
+        "cx": 2
+      },
+      "ideal_p_target": 0.9999999999999969,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "00",
+        "top_probability": 0.9999999999999976,
+        "p_target": 8.163948123120024e-34
+      }
+    },
+    {
+      "name": "pennylane-grover-hw-000-10",
+      "builder": "PennyLane",
+      "kind": "control",
+      "source_label": "PennyLane@grover-hw-000",
+      "source_qasm_sha256": "e8d387d69ba3731e3f5e51cd7ec5214e08ee1f8eadf49a01a3a064a6f3054535",
+      "expected_marked_state": "10",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "10",
+      "num_qubits": 2,
+      "gate_counts": {
+        "h": 6,
+        "x": 4,
+        "cx": 2,
+        "rz": 2
+      },
+      "ideal_p_target": 0.9999999999999991,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "00",
+        "top_probability": 0.9999999999999991,
+        "p_target": 5.577060207443597e-34
+      }
+    },
+    {
+      "name": "qiskit-grover-hw-000-10",
+      "builder": "Qiskit",
+      "kind": "control",
+      "source_label": "Qiskit@grover-hw-000",
+      "source_qasm_sha256": "598ed8fcb322913a2d5f9857f9285309759d13a9f0e9f7a68421951c604dc349",
+      "expected_marked_state": "10",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "10",
+      "num_qubits": 2,
+      "gate_counts": {
+        "h": 10,
+        "x": 6,
+        "cx": 2
+      },
+      "ideal_p_target": 0.9999999999999984,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "10",
+        "top_probability": 0.9999999999999984,
+        "p_target": 0.9999999999999984
+      }
+    },
+    {
+      "name": "readout-grover-hw-000-10",
+      "builder": "readout",
+      "kind": "readout",
+      "source_label": "readout@grover-hw-000",
+      "source_qasm_sha256": "7ef74f2529b99c7389e598805674f26b2adb1526cb6cdab14a3220648b455dbe",
+      "expected_marked_state": "10",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "10",
+      "num_qubits": 2,
+      "gate_counts": {
+        "x": 1
+      },
+      "ideal_p_target": 1.0,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "10",
+        "top_probability": 1.0,
+        "p_target": 1.0
+      }
+    },
+    {
+      "name": "cirq-grover-hw-001-11",
+      "builder": "Cirq",
+      "kind": "control",
+      "source_label": "Cirq@grover-hw-001",
+      "source_qasm_sha256": "63ae3d696226fecde05c7cfffd344fcbf9aa2e3d9c5c3217b9e9bd9fd18e0b35",
+      "expected_marked_state": "11",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "11",
+      "num_qubits": 2,
+      "gate_counts": {
+        "rz": 42,
+        "h": 16,
+        "cx": 2
+      },
+      "ideal_p_target": 0.9999999999999969,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "00",
+        "top_probability": 0.9999999999999976,
+        "p_target": 6.0897172726180845e-68
+      }
+    },
+    {
+      "name": "pennylane-grover-hw-001-11",
+      "builder": "PennyLane",
+      "kind": "control",
+      "source_label": "PennyLane@grover-hw-001",
+      "source_qasm_sha256": "5320d1a485c28003f852fae94378088ded8e0ce22744fbb2b8a227a7b7d01fee",
+      "expected_marked_state": "11",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "11",
+      "num_qubits": 2,
+      "gate_counts": {
+        "h": 4,
+        "cx": 2,
+        "x": 2,
+        "rz": 2
+      },
+      "ideal_p_target": 0.9999999999999993,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "01",
+        "top_probability": 0.9999999999999993,
+        "p_target": 3.872928019572694e-37
+      }
+    },
+    {
+      "name": "qiskit-grover-hw-001-11",
+      "builder": "Qiskit",
+      "kind": "control",
+      "source_label": "Qiskit@grover-hw-001",
+      "source_qasm_sha256": "6e1dd3202bbb18b5e4ec96ac1336e77733cb09dc20a677199ca878c83fd6d6e1",
+      "expected_marked_state": "11",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "11",
+      "num_qubits": 2,
+      "gate_counts": {
+        "h": 6,
+        "x": 4,
+        "cx": 2
+      },
+      "ideal_p_target": 0.9999999999999991,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "11",
+        "top_probability": 0.9999999999999991,
+        "p_target": 0.9999999999999991
+      }
+    },
+    {
+      "name": "readout-grover-hw-001-11",
+      "builder": "readout",
+      "kind": "readout",
+      "source_label": "readout@grover-hw-001",
+      "source_qasm_sha256": "f92814ebeeb59c083e53c7daef1c9d528aba55585abfb81a20110b1c0ee5b1ae",
+      "expected_marked_state": "11",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "11",
+      "num_qubits": 2,
+      "gate_counts": {
+        "x": 2
+      },
+      "ideal_p_target": 1.0,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "11",
+        "top_probability": 1.0,
+        "p_target": 1.0
+      }
+    },
+    {
+      "name": "cirq-grover-hw-002-0111",
+      "builder": "Cirq",
+      "kind": "control",
+      "source_label": "Cirq@grover-hw-002",
+      "source_qasm_sha256": "92ecc3924c5426d3ac8e70a272c1f35a6ead627a0b60bc85bc61e203e5909504",
+      "expected_marked_state": "0111",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0111",
+      "num_qubits": 4,
+      "gate_counts": {
+        "rz": 1477,
+        "h": 606,
+        "cx": 112
+      },
+      "ideal_p_target": 0.9084472656322434,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0000",
+        "top_probability": 0.9999999999998992,
+        "p_target": 2.0986961740231375e-101
+      }
+    },
+    {
+      "name": "pennylane-grover-hw-002-0111",
+      "builder": "PennyLane",
+      "kind": "control",
+      "source_label": "PennyLane@grover-hw-002",
+      "source_qasm_sha256": "58392b900c0f7d1786abec718af5e48661f598c2031a3d2aabd0ba42edd54c0e",
+      "expected_marked_state": "0111",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0111",
+      "num_qubits": 4,
+      "gate_counts": {
+        "rz": 390,
+        "h": 102,
+        "cx": 88,
+        "x": 16
+      },
+      "ideal_p_target": 0.9084472656249801,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0000",
+        "top_probability": 0.062499999999999056,
+        "p_target": 0.062499999999999015
+      }
+    },
+    {
+      "name": "qiskit-grover-hw-002-0111",
+      "builder": "Qiskit",
+      "kind": "control",
+      "source_label": "Qiskit@grover-hw-002",
+      "source_qasm_sha256": "605d5a4d14727beae61b08eec00a078b4a6f58f9d574991bdea23a181ac39166",
+      "expected_marked_state": "0111",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0111",
+      "num_qubits": 4,
+      "gate_counts": {
+        "rz": 60,
+        "cx": 56,
+        "h": 20,
+        "x": 20
+      },
+      "ideal_p_target": 0.9084472656249939,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0000",
+        "top_probability": 0.062499999999999806,
+        "p_target": 0.062499999999999806
+      }
+    },
+    {
+      "name": "readout-grover-hw-002-0111",
+      "builder": "readout",
+      "kind": "readout",
+      "source_label": "readout@grover-hw-002",
+      "source_qasm_sha256": "5a92f0c1c8976d6bac2df3449d1a92d67ca842fa3173fcfea51b668474672a73",
+      "expected_marked_state": "0111",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0111",
+      "num_qubits": 4,
+      "gate_counts": {
+        "x": 3
+      },
+      "ideal_p_target": 1.0,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0111",
+        "top_probability": 1.0,
+        "p_target": 1.0
+      }
+    },
+    {
+      "name": "cirq-grover-hw-003-0110",
+      "builder": "Cirq",
+      "kind": "control",
+      "source_label": "Cirq@grover-hw-003",
+      "source_qasm_sha256": "10359174b32a01367dc340f7ef6e7505f7bb1e825d9a16faa4f527dda1ae15c4",
+      "expected_marked_state": "0110",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0110",
+      "num_qubits": 4,
+      "gate_counts": {
+        "rz": 1477,
+        "h": 606,
+        "cx": 112
+      },
+      "ideal_p_target": 0.9084472656243818,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0000",
+        "top_probability": 0.999999999999899,
+        "p_target": 8.445304973135784e-68
+      }
+    },
+    {
+      "name": "pennylane-grover-hw-003-0110",
+      "builder": "PennyLane",
+      "kind": "control",
+      "source_label": "PennyLane@grover-hw-003",
+      "source_qasm_sha256": "665ffbf9180b2b53c8d677963cafb345b0d81c83097f10901cea3034dfa4e68a",
+      "expected_marked_state": "0110",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0110",
+      "num_qubits": 4,
+      "gate_counts": {
+        "rz": 390,
+        "h": 104,
+        "cx": 88,
+        "x": 20
+      },
+      "ideal_p_target": 0.9084472656249797,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0000",
+        "top_probability": 0.062499999999999056,
+        "p_target": 0.06249999999999904
+      }
+    },
+    {
+      "name": "qiskit-grover-hw-003-0110",
+      "builder": "Qiskit",
+      "kind": "control",
+      "source_label": "Qiskit@grover-hw-003",
+      "source_qasm_sha256": "27bbe023a43a820c125baad421cdf479b63c3fe7f288c1a3a82ec8540e478099",
+      "expected_marked_state": "0110",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0110",
+      "num_qubits": 4,
+      "gate_counts": {
+        "rz": 60,
+        "cx": 56,
+        "x": 24,
+        "h": 20
+      },
+      "ideal_p_target": 0.9084472656249939,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0000",
+        "top_probability": 0.062499999999999806,
+        "p_target": 0.062499999999999806
+      }
+    },
+    {
+      "name": "readout-grover-hw-003-0110",
+      "builder": "readout",
+      "kind": "readout",
+      "source_label": "readout@grover-hw-003",
+      "source_qasm_sha256": "43f4dcb3061270c6e243df4cd3e4b45be9a4e655c549f707702ebd2f40da8d00",
+      "expected_marked_state": "0110",
+      "manifest_orientation": "q0_left",
+      "target_q0_left": "0110",
+      "num_qubits": 4,
+      "gate_counts": {
+        "x": 2
+      },
+      "ideal_p_target": 1.0,
+      "rz_strip_hypothesis_model": {
+        "top_q0_left": "0110",
+        "top_probability": 1.0,
+        "p_target": 1.0
+      }
+    }
+  ]
+}

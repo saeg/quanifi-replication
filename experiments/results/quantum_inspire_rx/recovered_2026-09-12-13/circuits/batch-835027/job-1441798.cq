@@ -1,0 +1,10 @@
+version 3.0
+
+qubit[17] q
+bit[2] b
+
+X q[1]
+barrier q[1]
+barrier q[0]
+b[0] = measure q[1]
+b[1] = measure q[0]

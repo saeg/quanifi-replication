@@ -1,0 +1,146 @@
+[
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "5ec36c00-a124-4d0c-a397-87b8a28a0c52",
+    "label": "cdkm@3+0@region1",
+    "physical_qubits": [
+      0,
+      1,
+      2,
+      9,
+      10,
+      18
+    ],
+    "region_id": 1
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "39da19d5-6713-4c0c-8282-557efbb2a9b8",
+    "label": "cdkm@1+3@region1",
+    "physical_qubits": [
+      0,
+      1,
+      2,
+      9,
+      10,
+      18
+    ],
+    "region_id": 1
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "751a253e-701b-494e-9cb1-53239a00c5e9",
+    "label": "cdkm@0+3@region1",
+    "physical_qubits": [
+      0,
+      1,
+      2,
+      9,
+      10,
+      18
+    ],
+    "region_id": 1
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "35489c00-3695-487d-aff8-33d361403840",
+    "label": "cdkm@3+0@region2",
+    "physical_qubits": [
+      27,
+      28,
+      36,
+      37,
+      38,
+      45
+    ],
+    "region_id": 2
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "eb5cf2bd-303b-488f-ad1f-d49bc037a640",
+    "label": "cdkm@1+3@region2",
+    "physical_qubits": [
+      27,
+      28,
+      36,
+      37,
+      38,
+      45
+    ],
+    "region_id": 2
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "abb45eec-7e33-45bc-ab83-ed29b5cdd462",
+    "label": "cdkm@0+3@region2",
+    "physical_qubits": [
+      27,
+      28,
+      36,
+      37,
+      38,
+      45
+    ],
+    "region_id": 2
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "1dab48bf-a86f-4fcc-af37-2cf0c31bf63f",
+    "label": "cdkm@3+0@region3",
+    "physical_qubits": [
+      53,
+      61,
+      62,
+      70,
+      71,
+      80
+    ],
+    "region_id": 3
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "2d1022f6-8948-42cb-a409-dad9a9398870",
+    "label": "cdkm@1+3@region3",
+    "physical_qubits": [
+      53,
+      61,
+      62,
+      70,
+      71,
+      80
+    ],
+    "region_id": 3
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "bc6ef0ad-7679-4383-9aaf-cbd2b85b583b",
+    "label": "cdkm@0+3@region3",
+    "physical_qubits": [
+      53,
+      61,
+      62,
+      70,
+      71,
+      80
+    ],
+    "region_id": 3
+  }
+]

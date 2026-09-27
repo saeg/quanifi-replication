@@ -1,0 +1,1251 @@
+{
+  "note": "Fourth-pass correction: see the module docstring in tools/adder_defect_checks.py. `invariance` reports the Step 1 operand-invariance check per builder/bit_width; `rows` is one entry per (builder, bit_width, a, b) that passed it, with the rz-strip hypothesis model's prediction under each controlled form.",
+  "invariance": {
+    "qiskit/cdkm@bit_width=1": {
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "invariant": true,
+      "body_instruction_count": 35,
+      "per_pair": {
+        "0,0": {
+          "expected_prep_qubits": [],
+          "n_stripped": 0,
+          "ok": true
+        },
+        "0,1": {
+          "expected_prep_qubits": [
+            1
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "1,0": {
+          "expected_prep_qubits": [
+            0
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "1,1": {
+          "expected_prep_qubits": [
+            0,
+            1
+          ],
+          "n_stripped": 2,
+          "ok": true
+        }
+      }
+    },
+    "qiskit/cdkm@bit_width=2": {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "invariant": true,
+      "body_instruction_count": 69,
+      "per_pair": {
+        "0,0": {
+          "expected_prep_qubits": [],
+          "n_stripped": 0,
+          "ok": true
+        },
+        "0,1": {
+          "expected_prep_qubits": [
+            2
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "0,2": {
+          "expected_prep_qubits": [
+            3
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "0,3": {
+          "expected_prep_qubits": [
+            2,
+            3
+          ],
+          "n_stripped": 2,
+          "ok": true
+        },
+        "1,0": {
+          "expected_prep_qubits": [
+            0
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "1,1": {
+          "expected_prep_qubits": [
+            0,
+            2
+          ],
+          "n_stripped": 2,
+          "ok": true
+        },
+        "1,2": {
+          "expected_prep_qubits": [
+            0,
+            3
+          ],
+          "n_stripped": 2,
+          "ok": true
+        },
+        "1,3": {
+          "expected_prep_qubits": [
+            0,
+            2,
+            3
+          ],
+          "n_stripped": 3,
+          "ok": true
+        },
+        "2,0": {
+          "expected_prep_qubits": [
+            1
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "2,1": {
+          "expected_prep_qubits": [
+            2,
+            1
+          ],
+          "n_stripped": 2,
+          "ok": true
+        },
+        "2,2": {
+          "expected_prep_qubits": [
+            1,
+            3
+          ],
+          "n_stripped": 2,
+          "ok": true
+        },
+        "2,3": {
+          "expected_prep_qubits": [
+            2,
+            1,
+            3
+          ],
+          "n_stripped": 3,
+          "ok": true
+        },
+        "3,0": {
+          "expected_prep_qubits": [
+            0,
+            1
+          ],
+          "n_stripped": 2,
+          "ok": true
+        },
+        "3,1": {
+          "expected_prep_qubits": [
+            0,
+            2,
+            1
+          ],
+          "n_stripped": 3,
+          "ok": true
+        },
+        "3,2": {
+          "expected_prep_qubits": [
+            0,
+            1,
+            3
+          ],
+          "n_stripped": 3,
+          "ok": true
+        },
+        "3,3": {
+          "expected_prep_qubits": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "n_stripped": 4,
+          "ok": true
+        }
+      }
+    },
+    "cirq/qft@bit_width=1": {
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "invariant": true,
+      "body_instruction_count": 41,
+      "per_pair": {
+        "0,0": {
+          "expected_prep_qubits": [],
+          "n_stripped": 0,
+          "ok": true
+        },
+        "0,1": {
+          "expected_prep_qubits": [
+            1
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "1,0": {
+          "expected_prep_qubits": [
+            0
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "1,1": {
+          "expected_prep_qubits": [
+            0,
+            1
+          ],
+          "n_stripped": 2,
+          "ok": true
+        }
+      }
+    },
+    "pennylane/outadder@bit_width=1": {
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "invariant": true,
+      "body_instruction_count": 36,
+      "per_pair": {
+        "0,0": {
+          "expected_prep_qubits": [],
+          "n_stripped": 0,
+          "ok": true
+        },
+        "0,1": {
+          "expected_prep_qubits": [
+            1
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "1,0": {
+          "expected_prep_qubits": [
+            0
+          ],
+          "n_stripped": 1,
+          "ok": true
+        },
+        "1,1": {
+          "expected_prep_qubits": [
+            0,
+            1
+          ],
+          "n_stripped": 2,
+          "ok": true
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 0,
+      "b": 0,
+      "correct_value": 0,
+      "correct_bitstring": "00",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999996,
+          "rz_strip_hypothesis_model": {
+            "top_value": "00",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "00",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 0,
+      "b": 1,
+      "correct_value": 1,
+      "correct_bitstring": "10",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999996,
+          "rz_strip_hypothesis_model": {
+            "top_value": "10",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "10",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 1,
+      "b": 0,
+      "correct_value": 1,
+      "correct_bitstring": "10",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [
+        0
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999992,
+          "rz_strip_hypothesis_model": {
+            "top_value": "11",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "10",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 1,
+      "b": 1,
+      "correct_value": 2,
+      "correct_bitstring": "01",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [
+        0,
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999998,
+          "rz_strip_hypothesis_model": {
+            "top_value": "01",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "01",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 0,
+      "b": 0,
+      "correct_value": 0,
+      "correct_bitstring": "000",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999993,
+          "rz_strip_hypothesis_model": {
+            "top_value": "000",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "000",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 0,
+      "b": 1,
+      "correct_value": 1,
+      "correct_bitstring": "100",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        2
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999993,
+          "rz_strip_hypothesis_model": {
+            "top_value": "100",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "100",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 0,
+      "b": 2,
+      "correct_value": 2,
+      "correct_bitstring": "010",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999996,
+          "rz_strip_hypothesis_model": {
+            "top_value": "010",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "010",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 0,
+      "b": 3,
+      "correct_value": 3,
+      "correct_bitstring": "110",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        2,
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999993,
+          "rz_strip_hypothesis_model": {
+            "top_value": "110",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "110",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 1,
+      "b": 0,
+      "correct_value": 1,
+      "correct_bitstring": "100",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999989,
+          "rz_strip_hypothesis_model": {
+            "top_value": "110",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "100",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 1,
+      "b": 1,
+      "correct_value": 2,
+      "correct_bitstring": "010",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0,
+        2
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999993,
+          "rz_strip_hypothesis_model": {
+            "top_value": "010",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "010",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 1,
+      "b": 2,
+      "correct_value": 3,
+      "correct_bitstring": "110",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0,
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999991,
+          "rz_strip_hypothesis_model": {
+            "top_value": "100",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "110",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 1,
+      "b": 3,
+      "correct_value": 4,
+      "correct_bitstring": "001",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0,
+        2,
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999993,
+          "rz_strip_hypothesis_model": {
+            "top_value": "000",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "001",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 2,
+      "b": 0,
+      "correct_value": 2,
+      "correct_bitstring": "010",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999993,
+          "rz_strip_hypothesis_model": {
+            "top_value": "011",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "010",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 2,
+      "b": 1,
+      "correct_value": 3,
+      "correct_bitstring": "110",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        2,
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999982,
+          "rz_strip_hypothesis_model": {
+            "top_value": "111",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "110",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 2,
+      "b": 2,
+      "correct_value": 4,
+      "correct_bitstring": "001",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        1,
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999996,
+          "rz_strip_hypothesis_model": {
+            "top_value": "001",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "001",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 2,
+      "b": 3,
+      "correct_value": 5,
+      "correct_bitstring": "101",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        2,
+        1,
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999991,
+          "rz_strip_hypothesis_model": {
+            "top_value": "101",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "101",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 3,
+      "b": 0,
+      "correct_value": 3,
+      "correct_bitstring": "110",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0,
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999991,
+          "rz_strip_hypothesis_model": {
+            "top_value": "101",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "110",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 3,
+      "b": 1,
+      "correct_value": 4,
+      "correct_bitstring": "001",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0,
+        2,
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999993,
+          "rz_strip_hypothesis_model": {
+            "top_value": "001",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "001",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 3,
+      "b": 2,
+      "correct_value": 5,
+      "correct_bitstring": "101",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0,
+        1,
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999987,
+          "rz_strip_hypothesis_model": {
+            "top_value": "111",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "101",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "qiskit/cdkm",
+      "bit_width": 2,
+      "a": 3,
+      "b": 3,
+      "correct_value": 6,
+      "correct_bitstring": "011",
+      "result_qubits": [
+        2,
+        3,
+        4
+      ],
+      "prep_sequence": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999989,
+          "rz_strip_hypothesis_model": {
+            "top_value": "011",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        },
+        "whole": {
+          "ideal_P_correct": 1.0,
+          "rz_strip_hypothesis_model": {
+            "top_value": "011",
+            "top_probability": 1.0,
+            "P_correct": 1.0,
+            "note": "vacuous: the {ccx, cx, x, h} whole-adder basis contains no rz instructions to strip, so the rz-strip hypothesis model leaves this form unchanged from its ideal simulation."
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 0,
+      "b": 0,
+      "correct_value": 0,
+      "correct_bitstring": "00",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.999999999999998,
+          "rz_strip_hypothesis_model": {
+            "top_value": "11",
+            "top_probability": 0.2500000000000001,
+            "P_correct": 0.24999999999999994
+          },
+          "visible": false,
+          "detectable": true
+        }
+      }
+    },
+    {
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 0,
+      "b": 1,
+      "correct_value": 1,
+      "correct_bitstring": "10",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999982,
+          "rz_strip_hypothesis_model": {
+            "top_value": "10",
+            "top_probability": 0.2500000000000001,
+            "P_correct": 0.2500000000000001
+          },
+          "visible": false,
+          "detectable": true
+        }
+      }
+    },
+    {
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 1,
+      "b": 0,
+      "correct_value": 1,
+      "correct_bitstring": "10",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [
+        0
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999983,
+          "rz_strip_hypothesis_model": {
+            "top_value": "00",
+            "top_probability": 0.25,
+            "P_correct": 0.24999999999999983
+          },
+          "visible": false,
+          "detectable": true
+        }
+      }
+    },
+    {
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 1,
+      "b": 1,
+      "correct_value": 2,
+      "correct_bitstring": "01",
+      "result_qubits": [
+        1,
+        2
+      ],
+      "prep_sequence": [
+        0,
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999981,
+          "rz_strip_hypothesis_model": {
+            "top_value": "10",
+            "top_probability": 0.2500000000000001,
+            "P_correct": 0.25
+          },
+          "visible": false,
+          "detectable": true
+        }
+      }
+    },
+    {
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 0,
+      "b": 0,
+      "correct_value": 0,
+      "correct_bitstring": "00",
+      "result_qubits": [
+        2,
+        3
+      ],
+      "prep_sequence": [],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999998,
+          "rz_strip_hypothesis_model": {
+            "top_value": "00",
+            "top_probability": 1.0,
+            "P_correct": 1.0
+          },
+          "visible": false,
+          "detectable": false
+        }
+      }
+    },
+    {
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 0,
+      "b": 1,
+      "correct_value": 1,
+      "correct_bitstring": "10",
+      "result_qubits": [
+        2,
+        3
+      ],
+      "prep_sequence": [
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999997,
+          "rz_strip_hypothesis_model": {
+            "top_value": "00",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        }
+      }
+    },
+    {
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 1,
+      "b": 0,
+      "correct_value": 1,
+      "correct_bitstring": "10",
+      "result_qubits": [
+        2,
+        3
+      ],
+      "prep_sequence": [
+        0
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999992,
+          "rz_strip_hypothesis_model": {
+            "top_value": "00",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        }
+      }
+    },
+    {
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 1,
+      "b": 1,
+      "correct_value": 2,
+      "correct_bitstring": "01",
+      "result_qubits": [
+        2,
+        3
+      ],
+      "prep_sequence": [
+        0,
+        1
+      ],
+      "forms": {
+        "decomposed": {
+          "ideal_P_correct": 0.9999999999999991,
+          "rz_strip_hypothesis_model": {
+            "top_value": "00",
+            "top_probability": 1.0,
+            "P_correct": 0.0
+          },
+          "visible": true,
+          "detectable": true
+        }
+      }
+    }
+  ]
+}

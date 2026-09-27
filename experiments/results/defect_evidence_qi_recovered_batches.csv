@@ -1,0 +1,23 @@
+batch_job_id,batch_created_on,job_id,role,gates,shots,top,p_top,ideal,ideal_p,verdict,ideal_rx_negated,matches_rx_negated,rx_sign_sensitive
+835027,2026-09-12 14:57 UTC,1441797,not recorded,Rx:2 Ry:4 Rz:6 CR:2,1024,10,0.9482421875,01,0.9999999999999996,complement of ideal,10,yes,yes
+835027,2026-09-12 14:57 UTC,1441798,readout baseline X q[1],X:1,1024,01,0.9453125,01,1.0,matches ideal,01,yes,no
+835027,2026-09-12 14:57 UTC,1441799,not recorded,H:1 Ry:3 Rz:3 CNOT:2,1024,01,0.9453125,01,1.0,matches ideal,01,yes,no
+835027,2026-09-12 14:57 UTC,1441800,not recorded,H:1 Z:1 Ry:4 CNOT:1 CZ:1,1024,01,0.9375,01,1.0000000000000004,matches ideal,01,yes,no
+835027,2026-09-12 14:57 UTC,1441801,not recorded,H:1 Ry:3 Rz:3 CNOT:2,1024,01,0.9482421875,01,1.0,matches ideal,01,yes,no
+835548,2026-09-13 01:53 UTC,1442878,not recorded,Rx:2 Ry:4 Rz:6 CZ:2,1024,00,0.9560546875,11,0.9999999999999982,complement of ideal,00,yes,yes
+835548,2026-09-13 01:53 UTC,1442879,not recorded,Rx:2 Ry:4 Rz:6 CR:2,1024,10,0.9453125,01,0.9999999999999996,complement of ideal,10,yes,yes
+835548,2026-09-13 01:53 UTC,1442880,not recorded,Rx:2 Ry:4 Rz:6 CZ:2,1024,10,0.92578125,01,0.9999999999999996,complement of ideal,10,yes,yes
+835548,2026-09-13 01:53 UTC,1442881,not recorded,Rx:2 Ry:4 Rz:6 CR:2,1024,00,0.9404296875,11,0.9999999999999967,complement of ideal,00,yes,yes
+835555,2026-09-13 01:58 UTC,1442888,not recorded,Rx:2,1024,1,0.9541015625,1,0.9999999999999996,matches ideal,1,yes,no
+835555,2026-09-13 01:58 UTC,1442889,not recorded,Rx:1,1024,1,0.97265625,1,0.9999999999999996,matches ideal,1,yes,no
+835555,2026-09-13 01:58 UTC,1442890,not recorded,Ry:1,1024,1,0.9658203125,1,0.9999999999999996,matches ideal,1,yes,no
+835555,2026-09-13 01:58 UTC,1442891,not recorded,X:1,1024,1,0.974609375,1,1.0,matches ideal,1,yes,no
+835555,2026-09-13 01:58 UTC,1442892,not recorded,Ry:2,1024,1,0.958984375,1,0.9999999999999996,matches ideal,1,yes,no
+835559,2026-09-13 02:00 UTC,1442896,not recorded,Rx:2 Ry:4 Rz:6 CR:2,1024,00,0.927734375,11,0.9999999999999967,complement of ideal,00,yes,yes
+835559,2026-09-13 02:00 UTC,1442897,not recorded,Rx:2 Ry:4 Rz:4 CR:2,1024,00,0.9462890625,11,0.9999999999999969,complement of ideal,00,yes,yes
+835559,2026-09-13 02:00 UTC,1442898,not recorded,H:1 Ry:3 Rz:1 CNOT:2,1024,11,0.9287109375,11,0.9999999999999996,matches ideal,11,yes,no
+835568,2026-09-13 02:03 UTC,1442927,"Cirq, marked 11, as sent (contains Rx)",Rx:2 Ry:4 Rz:6 CR:2,1024,00,0.9443359375,11,0.9999999999999967,complement of ideal,00,yes,yes
+835568,2026-09-13 02:03 UTC,1442928,"Qiskit, marked 11 (no Rx)",H:1 Ry:3 Rz:1 CNOT:2,1024,11,0.884765625,11,0.9999999999999996,matches ideal,11,yes,no
+835568,2026-09-13 02:03 UTC,1442929,probe Ry(pi/2) Rz(pi/2) Rx(pi/2),Rx:1 Ry:1 Rz:1,1024,1,0.931640625,0,1.0000000000000004,complement of ideal,1,yes,yes
+835568,2026-09-13 02:03 UTC,1442930,probe Rx(pi/2) Rz(pi/2) Ry(pi/2),Rx:1 Ry:1 Rz:1,1024,0,0.986328125,1,0.9999999999999998,complement of ideal,0,yes,yes
+835568,2026-09-13 02:03 UTC,1442931,same program with both Rx angles negated,Rx:2 Ry:4 Rz:6 CR:2,1024,11,0.9296875,00,0.999999999999998,complement of ideal,11,yes,yes

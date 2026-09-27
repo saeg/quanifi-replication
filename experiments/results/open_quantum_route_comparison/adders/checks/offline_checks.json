@@ -1,0 +1,2336 @@
+[
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 1,
+    "a": 0,
+    "b": 0,
+    "correct_value": 0,
+    "correct_bitstring": "00",
+    "num_qubits": 4,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 42,
+        "cx": 17,
+        "h": 8
+      },
+      "whole": {
+        "cx": 5,
+        "ccx": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999997
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": false,
+    "detectable": false
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 1,
+    "a": 0,
+    "b": 1,
+    "correct_value": 1,
+    "correct_bitstring": "10",
+    "num_qubits": 4,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 49,
+        "cx": 17,
+        "h": 10
+      },
+      "whole": {
+        "cx": 5,
+        "ccx": 2,
+        "x": 1
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999984
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 1,
+    "a": 1,
+    "b": 0,
+    "correct_value": 1,
+    "correct_bitstring": "10",
+    "num_qubits": 4,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 49,
+        "cx": 17,
+        "h": 10
+      },
+      "whole": {
+        "cx": 5,
+        "ccx": 2,
+        "x": 1
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999987
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 1,
+    "a": 1,
+    "b": 1,
+    "correct_value": 2,
+    "correct_bitstring": "01",
+    "num_qubits": 4,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 56,
+        "cx": 17,
+        "h": 12
+      },
+      "whole": {
+        "cx": 5,
+        "x": 2,
+        "ccx": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.999999999999999
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 0,
+    "b": 0,
+    "correct_value": 0,
+    "correct_bitstring": "000",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 84,
+        "cx": 33,
+        "h": 16
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999982
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": false,
+    "detectable": false
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 0,
+    "b": 1,
+    "correct_value": 1,
+    "correct_bitstring": "100",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 91,
+        "cx": 33,
+        "h": 18
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 1
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999987
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 0,
+    "b": 2,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 91,
+        "cx": 33,
+        "h": 18
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 1
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999982
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 0,
+    "b": 3,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 98,
+        "cx": 33,
+        "h": 20
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999971
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 1,
+    "b": 0,
+    "correct_value": 1,
+    "correct_bitstring": "100",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 91,
+        "cx": 33,
+        "h": 18
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 1
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999978
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 1,
+    "b": 1,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 98,
+        "cx": 33,
+        "h": 20
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999984
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 1,
+    "b": 2,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 98,
+        "cx": 33,
+        "h": 20
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.999999999999998
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 1,
+    "b": 3,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 105,
+        "cx": 33,
+        "h": 22
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 3
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999978
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 2,
+    "b": 0,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 91,
+        "cx": 33,
+        "h": 18
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 1
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999982
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 2,
+    "b": 1,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 98,
+        "cx": 33,
+        "h": 20
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.999999999999998
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 2,
+    "b": 2,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 98,
+        "cx": 33,
+        "h": 20
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999978
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 2,
+    "b": 3,
+    "correct_value": 5,
+    "correct_bitstring": "101",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 105,
+        "cx": 33,
+        "h": 22
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 3
+      }
+    },
+    "ideal": {
+      "P_correct": 0.999999999999998
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 3,
+    "b": 0,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 98,
+        "cx": 33,
+        "h": 20
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 2
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999993
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 3,
+    "b": 1,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 105,
+        "cx": 33,
+        "h": 22
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 3
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999967
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 3,
+    "b": 2,
+    "correct_value": 5,
+    "correct_bitstring": "101",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 105,
+        "cx": 33,
+        "h": 22
+      },
+      "whole": {
+        "cx": 9,
+        "ccx": 4,
+        "x": 3
+      }
+    },
+    "ideal": {
+      "P_correct": 0.999999999999998
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "qiskit/cdkm",
+    "bit_width": 2,
+    "a": 3,
+    "b": 3,
+    "correct_value": 6,
+    "correct_bitstring": "011",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 112,
+        "cx": 33,
+        "h": 24
+      },
+      "whole": {
+        "cx": 9,
+        "x": 4,
+        "ccx": 4
+      }
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999971
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "P_correct": 1.0,
+      "source": "genuine_ccx_reconstruction"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 1,
+    "a": 0,
+    "b": 0,
+    "correct_value": 0,
+    "correct_bitstring": "00",
+    "num_qubits": 3,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 141,
+        "h": 44,
+        "cx": 10
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.999999999999998
+    },
+    "stripped": {
+      "top_value": "11",
+      "top_probability": 0.2500000000000001,
+      "P_correct": 0.24999999999999994
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 1,
+    "a": 0,
+    "b": 1,
+    "correct_value": 1,
+    "correct_bitstring": "10",
+    "num_qubits": 3,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 141,
+        "h": 44,
+        "cx": 10,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999982
+    },
+    "stripped": {
+      "top_value": "10",
+      "top_probability": 0.2500000000000001,
+      "P_correct": 0.2500000000000001
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 1,
+    "a": 1,
+    "b": 0,
+    "correct_value": 1,
+    "correct_bitstring": "10",
+    "num_qubits": 3,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 141,
+        "h": 44,
+        "cx": 10,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999983
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 0.25,
+      "P_correct": 0.24999999999999983
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 1,
+    "a": 1,
+    "b": 1,
+    "correct_value": 2,
+    "correct_bitstring": "01",
+    "num_qubits": 3,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 141,
+        "h": 44,
+        "cx": 10,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999981
+    },
+    "stripped": {
+      "top_value": "10",
+      "top_probability": 0.2500000000000001,
+      "P_correct": 0.25
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 0,
+    "b": 0,
+    "correct_value": 0,
+    "correct_bitstring": "000",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999932
+    },
+    "stripped": {
+      "top_value": "100",
+      "top_probability": 0.12499999999999992,
+      "P_correct": 0.1249999999999999
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 0,
+    "b": 1,
+    "correct_value": 1,
+    "correct_bitstring": "100",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999933
+    },
+    "stripped": {
+      "top_value": "010",
+      "top_probability": 0.12499999999999999,
+      "P_correct": 0.12499999999999989
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 0,
+    "b": 2,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999915
+    },
+    "stripped": {
+      "top_value": "010",
+      "top_probability": 0.12499999999999996,
+      "P_correct": 0.12499999999999996
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 0,
+    "b": 3,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999927
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.12500000000000006,
+      "P_correct": 0.12499999999999986
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 1,
+    "b": 0,
+    "correct_value": 1,
+    "correct_bitstring": "100",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999947
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.12499999999999996,
+      "P_correct": 0.12499999999999992
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 1,
+    "b": 1,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999932
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.125,
+      "P_correct": 0.12499999999999983
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 1,
+    "b": 2,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999932
+    },
+    "stripped": {
+      "top_value": "111",
+      "top_probability": 0.12499999999999999,
+      "P_correct": 0.1249999999999999
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 1,
+    "b": 3,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.999999999999993
+    },
+    "stripped": {
+      "top_value": "101",
+      "top_probability": 0.12499999999999992,
+      "P_correct": 0.12499999999999972
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 2,
+    "b": 0,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.999999999999994
+    },
+    "stripped": {
+      "top_value": "011",
+      "top_probability": 0.1249999999999999,
+      "P_correct": 0.12499999999999989
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 2,
+    "b": 1,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999933
+    },
+    "stripped": {
+      "top_value": "001",
+      "top_probability": 0.12499999999999997,
+      "P_correct": 0.12499999999999993
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 2,
+    "b": 2,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.999999999999994
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.12499999999999997,
+      "P_correct": 0.12499999999999986
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 2,
+    "b": 3,
+    "correct_value": 5,
+    "correct_bitstring": "101",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999933
+    },
+    "stripped": {
+      "top_value": "111",
+      "top_probability": 0.12499999999999993,
+      "P_correct": 0.1249999999999999
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 3,
+    "b": 0,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999927
+    },
+    "stripped": {
+      "top_value": "111",
+      "top_probability": 0.12499999999999997,
+      "P_correct": 0.12499999999999992
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 3,
+    "b": 1,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999944
+    },
+    "stripped": {
+      "top_value": "011",
+      "top_probability": 0.12499999999999996,
+      "P_correct": 0.12499999999999993
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 3,
+    "b": 2,
+    "correct_value": 5,
+    "correct_bitstring": "101",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.999999999999993
+    },
+    "stripped": {
+      "top_value": "100",
+      "top_probability": 0.12499999999999996,
+      "P_correct": 0.12499999999999993
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "cirq/qft",
+    "bit_width": 2,
+    "a": 3,
+    "b": 3,
+    "correct_value": 6,
+    "correct_bitstring": "011",
+    "num_qubits": 5,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 423,
+        "h": 132,
+        "cx": 29,
+        "x": 4
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999921
+    },
+    "stripped": {
+      "top_value": "001",
+      "top_probability": 0.12499999999999999,
+      "P_correct": 0.12499999999999983
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 1,
+    "a": 0,
+    "b": 0,
+    "correct_value": 0,
+    "correct_bitstring": "00",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 20,
+        "cx": 18,
+        "h": 4
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999998
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 1.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": false
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 1,
+    "a": 0,
+    "b": 1,
+    "correct_value": 1,
+    "correct_bitstring": "10",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 20,
+        "cx": 18,
+        "h": 4,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999997
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 1,
+    "a": 1,
+    "b": 0,
+    "correct_value": 1,
+    "correct_bitstring": "10",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 20,
+        "cx": 18,
+        "h": 4,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999992
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 1,
+    "a": 1,
+    "b": 1,
+    "correct_value": 2,
+    "correct_bitstring": "01",
+    "num_qubits": 6,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 20,
+        "cx": 18,
+        "h": 4,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999991
+    },
+    "stripped": {
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "00",
+      "top_probability": 1.0,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 0,
+    "b": 0,
+    "correct_value": 0,
+    "correct_bitstring": "000",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999968
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.9999999999999998
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.9999999999999998
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": false,
+    "detectable": false
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 0,
+    "b": 1,
+    "correct_value": 1,
+    "correct_bitstring": "100",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999967
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 0,
+    "b": 2,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999963
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 0,
+    "b": 3,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999968
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 1,
+    "b": 0,
+    "correct_value": 1,
+    "correct_bitstring": "100",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999962
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 1,
+    "b": 1,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999976
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 1,
+    "b": 2,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.999999999999997
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 1,
+    "b": 3,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999979
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 2,
+    "b": 0,
+    "correct_value": 2,
+    "correct_bitstring": "010",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 1
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999979
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 2,
+    "b": 1,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999976
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 2,
+    "b": 2,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999973
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 2,
+    "b": 3,
+    "correct_value": 5,
+    "correct_bitstring": "101",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999971
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 3,
+    "b": 0,
+    "correct_value": 3,
+    "correct_bitstring": "110",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 2
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999974
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 3,
+    "b": 1,
+    "correct_value": 4,
+    "correct_bitstring": "001",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999972
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 3,
+    "b": 2,
+    "correct_value": 5,
+    "correct_bitstring": "101",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 3
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999971
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  },
+  {
+    "builder": "pennylane/outadder",
+    "bit_width": 2,
+    "a": 3,
+    "b": 3,
+    "correct_value": 6,
+    "correct_bitstring": "011",
+    "num_qubits": 9,
+    "gate_counts": {
+      "decomposed": {
+        "rz": 74,
+        "cx": 54,
+        "h": 6,
+        "x": 4
+      },
+      "whole": null
+    },
+    "ideal": {
+      "P_correct": 0.9999999999999971
+    },
+    "stripped": {
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "legacy_rx_rz_stripped_model": {
+      "note": "SUPERSEDED -- rx+rz stripped from the old OQ_BASIS decomposed form; not used for `visible`/`detectable` or preflight selection. Kept for comparison only.",
+      "top_value": "000",
+      "top_probability": 0.9999999999999998,
+      "P_correct": 0.0
+    },
+    "whole": {
+      "applicable": false,
+      "reason": "not applicable -- no whole-circuit control exists for this builder: its raw circuit output contains no multi-controlled gate to preserve, so there is nothing distinct from the decomposed, defect-exposed form"
+    },
+    "visible": true,
+    "detectable": true
+  }
+]

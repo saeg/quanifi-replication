@@ -1,0 +1,103 @@
+{
+  "schema": "qi-rx-sign-probe/v1",
+  "submitted_at": "2026-09-20T04:24:17.074286+00:00",
+  "observed_at": "2026-09-20T04:24:34.239335+00:00",
+  "backend": "Tuna-17",
+  "job_id": "843300",
+  "shots": 1024,
+  "transpiler": {
+    "optimization_level": 0,
+    "seed_transpiler": 11
+  },
+  "per_circuit_job_ids": {
+    "rx_sign_probe": 1459053,
+    "rx_sign_probe_neg": 1459050,
+    "ry_sign_control": 1459051,
+    "rx_pi_control": 1459054,
+    "idle_control": 1459052
+  },
+  "qasm": {
+    "rx_sign_probe": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[1];\ncreg c[1];\nrx(pi/2) q[0];\nrz(pi/2) q[0];\nh q[0];\nmeasure q[0] -> c[0];",
+    "rx_sign_probe_neg": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[1];\ncreg c[1];\nrx(-pi/2) q[0];\nrz(pi/2) q[0];\nh q[0];\nmeasure q[0] -> c[0];",
+    "ry_sign_control": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[1];\ncreg c[1];\nry(pi/2) q[0];\nh q[0];\nmeasure q[0] -> c[0];",
+    "rx_pi_control": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[1];\ncreg c[1];\nrx(pi) q[0];\nmeasure q[0] -> c[0];",
+    "idle_control": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[1];\ncreg c[1];\nmeasure q[0] -> c[0];"
+  },
+  "results": [
+    {
+      "circuit": "rx_sign_probe",
+      "counts": {
+        "0": 67,
+        "1": 957
+      },
+      "shots": 1024,
+      "top_outcome": "1",
+      "p_top": 0.9346,
+      "expected_standard_rx": "0",
+      "expected_negated_rx": "1",
+      "p_standard": 0.0654,
+      "p_negated": 0.9346,
+      "verdict": "matches negated Rx"
+    },
+    {
+      "circuit": "rx_sign_probe_neg",
+      "counts": {
+        "0": 922,
+        "1": 102
+      },
+      "shots": 1024,
+      "top_outcome": "0",
+      "p_top": 0.9004,
+      "expected_standard_rx": "1",
+      "expected_negated_rx": "0",
+      "p_standard": 0.0996,
+      "p_negated": 0.9004,
+      "verdict": "matches negated Rx"
+    },
+    {
+      "circuit": "ry_sign_control",
+      "counts": {
+        "0": 924,
+        "1": 100
+      },
+      "shots": 1024,
+      "top_outcome": "0",
+      "p_top": 0.9023,
+      "expected_standard_rx": "0",
+      "expected_negated_rx": "1",
+      "p_standard": 0.9023,
+      "p_negated": 0.0977,
+      "verdict": "matches standard Rx"
+    },
+    {
+      "circuit": "rx_pi_control",
+      "counts": {
+        "0": 49,
+        "1": 975
+      },
+      "shots": 1024,
+      "top_outcome": "1",
+      "p_top": 0.9521,
+      "expected_standard_rx": "1",
+      "expected_negated_rx": "1",
+      "p_standard": 0.9521,
+      "p_negated": 0.9521,
+      "verdict": "matches standard Rx"
+    },
+    {
+      "circuit": "idle_control",
+      "counts": {
+        "0": 950,
+        "1": 74
+      },
+      "shots": 1024,
+      "top_outcome": "0",
+      "p_top": 0.9277,
+      "expected_standard_rx": "0",
+      "expected_negated_rx": "0",
+      "p_standard": 0.9277,
+      "p_negated": 0.9277,
+      "verdict": "matches standard Rx"
+    }
+  ]
+}

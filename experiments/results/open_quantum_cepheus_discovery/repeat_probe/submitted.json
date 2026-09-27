@@ -1,0 +1,110 @@
+[
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "71c43a9f-aa43-4db3-9dcb-b54dfe78e42b",
+    "label": "cdkm@3+0@run1",
+    "run": 1,
+    "source_label": "cdkm@3+0"
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "9c09f2a4-48bc-4eff-ab5a-bff4bd37ca8a",
+    "label": "cdkm@3+0@run2",
+    "run": 2,
+    "source_label": "cdkm@3+0"
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "1c4624f5-3739-4b0d-b8e2-400fdf0c4ace",
+    "label": "cdkm@3+0@run3",
+    "run": 3,
+    "source_label": "cdkm@3+0"
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "82e9ad86-8a5f-4baf-b944-9b99e5e88cff",
+    "label": "cdkm@3+0@run4",
+    "run": 4,
+    "source_label": "cdkm@3+0"
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "a7a47beb-e1c5-4eac-9982-d321364daefe",
+    "label": "cdkm@1+3@run1",
+    "run": 1,
+    "source_label": "cdkm@1+3"
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "049ee706-149d-4828-9f71-5d98ccfa6820",
+    "label": "cdkm@1+3@run2",
+    "run": 2,
+    "source_label": "cdkm@1+3"
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "9a607eb2-33cf-410b-b483-a9301eeebf9a",
+    "label": "cdkm@1+3@run3",
+    "run": 3,
+    "source_label": "cdkm@1+3"
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "56c72911-c235-4053-a8fa-1df5ddd14784",
+    "label": "cdkm@1+3@run4",
+    "run": 4,
+    "source_label": "cdkm@1+3"
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "008c178d-6556-482e-9606-8fc007d20a90",
+    "label": "cdkm@0+3@run1",
+    "run": 1,
+    "source_label": "cdkm@0+3"
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "c3c9ef20-73dc-4ed5-83e3-8e9693926fad",
+    "label": "cdkm@0+3@run2",
+    "run": 2,
+    "source_label": "cdkm@0+3"
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "b734275d-d25c-473a-9c28-22587b5fb51b",
+    "label": "cdkm@0+3@run3",
+    "run": 3,
+    "source_label": "cdkm@0+3"
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "49f94322-575b-4bef-aad4-4cf86225c08a",
+    "label": "cdkm@0+3@run4",
+    "run": 4,
+    "source_label": "cdkm@0+3"
+  }
+]

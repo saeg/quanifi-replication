@@ -1,0 +1,156 @@
+[
+  {
+    "name": "A_toffoli_raw_ccx",
+    "job_id": "9866be2e-34f1-4ab7-9aa7-e3d6f4a31c18",
+    "description": "Toffoli as high-level ccx (CORRECT)",
+    "expected": "111",
+    "status": "Completed",
+    "raw_top_littleendian": "111",
+    "top_q0_left": "111",
+    "p_top": 0.5918,
+    "shots": 512
+  },
+  {
+    "name": "B_toffoli_decomposed",
+    "job_id": "0ba08611-799a-4403-9605-5322155fccd8",
+    "description": "Toffoli pre-decomposed to rx/rz/cz/h/x/cx (WRONG)",
+    "expected": "111",
+    "status": "Completed",
+    "raw_top_littleendian": "011",
+    "top_q0_left": "110",
+    "p_top": 0.873,
+    "shots": 512
+  },
+  {
+    "name": "C1_single_x",
+    "job_id": "66a21605-7150-41e6-976c-635911ed753a",
+    "description": "x q[0] sanity check",
+    "expected": "1",
+    "status": "Completed",
+    "raw_top_littleendian": "01",
+    "top_q0_left": "10",
+    "p_top": 0.8926,
+    "shots": 512
+  },
+  {
+    "name": "C2_rz_pi_sandwich",
+    "job_id": "a6e0af03-a9a2-4433-989e-edccbefa2e21",
+    "description": "H Z H == X : proves rz is honoured",
+    "expected": "1",
+    "status": "Completed",
+    "raw_top_littleendian": "01",
+    "top_q0_left": "10",
+    "p_top": 0.8555,
+    "shots": 512
+  },
+  {
+    "name": "C3_hh_control",
+    "job_id": "6ff426af-1566-4f3b-ac45-f1c03e8ac76b",
+    "description": "H H == I control",
+    "expected": "0",
+    "status": "Completed",
+    "raw_top_littleendian": "00",
+    "top_q0_left": "00",
+    "p_top": 0.9863,
+    "shots": 512
+  },
+  {
+    "name": "D1_bitorder_100000",
+    "job_id": "2c3ae2f1-5235-40e8-a5b0-2064cbadca98",
+    "description": "non-palindromic basis state",
+    "expected": "100000",
+    "status": "Completed",
+    "raw_top_littleendian": "000001",
+    "top_q0_left": "100000",
+    "p_top": 0.6777,
+    "shots": 512
+  },
+  {
+    "name": "D2_bitorder_110000",
+    "job_id": "0983cd07-ca91-409b-9825-6bdcbcb0e6f4",
+    "description": "non-palindromic basis state",
+    "expected": "110000",
+    "status": "Completed",
+    "raw_top_littleendian": "000011",
+    "top_q0_left": "110000",
+    "p_top": 0.7285,
+    "shots": 512
+  },
+  {
+    "name": "D3_bitorder_001010",
+    "job_id": "001e5d05-189e-4366-9bb0-b09152afc939",
+    "description": "non-palindromic basis state",
+    "expected": "001010",
+    "status": "Completed",
+    "raw_top_littleendian": "010100",
+    "top_q0_left": "001010",
+    "p_top": 0.8516,
+    "shots": 512
+  },
+  {
+    "name": "D4_bitorder_000110",
+    "job_id": "33ccf03c-08d5-4dcd-aba9-e230ea2b7418",
+    "description": "non-palindromic basis state",
+    "expected": "000110",
+    "status": "Completed",
+    "raw_top_littleendian": "011000",
+    "top_q0_left": "000110",
+    "p_top": 0.8086,
+    "shots": 512
+  },
+  {
+    "name": "E1_route_q0_q5",
+    "job_id": "198ea128-0b30-43e4-bd43-882cffc55a36",
+    "description": "distant 2q gate, routing test",
+    "expected": "100001",
+    "status": "Completed",
+    "raw_top_littleendian": "100001",
+    "top_q0_left": "100001",
+    "p_top": 0.6621,
+    "shots": 512
+  },
+  {
+    "name": "E2_route_chain",
+    "job_id": "1171b1db-0659-43cf-b1ab-b4b613dbbee9",
+    "description": "routing chain",
+    "expected": "100101",
+    "status": "Completed",
+    "raw_top_littleendian": "101001",
+    "top_q0_left": "100101",
+    "p_top": 0.7441,
+    "shots": 512
+  },
+  {
+    "name": "E3_route_fanout",
+    "job_id": "1156cd1b-8593-445a-b71f-6dec20829dee",
+    "description": "routing fanout",
+    "expected": "101011",
+    "status": "Completed",
+    "raw_top_littleendian": "110101",
+    "top_q0_left": "101011",
+    "p_top": 0.625,
+    "shots": 512
+  },
+  {
+    "name": "F1_iqm_raw_ccx",
+    "job_id": "21d1cc6c-fd9d-43d4-9918-883aa7cdbd8d",
+    "description": "IQM Garnet: Toffoli as high-level ccx (CORRECT)",
+    "expected": "111",
+    "status": "Completed",
+    "raw_top_littleendian": "111",
+    "top_q0_left": "111",
+    "p_top": 0.8574,
+    "shots": 512
+  },
+  {
+    "name": "F2_iqm_decomposed",
+    "job_id": "409789b6-7b4a-47e7-ad94-17b3072e0261",
+    "description": "IQM Garnet: same Toffoli pre-decomposed (WRONG) - proves defect is vendor-independent",
+    "expected": "111",
+    "status": "Completed",
+    "raw_top_littleendian": "011",
+    "top_q0_left": "110",
+    "p_top": 0.959,
+    "shots": 512
+  }
+]

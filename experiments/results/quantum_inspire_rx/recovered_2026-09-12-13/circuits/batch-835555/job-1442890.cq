@@ -1,0 +1,7 @@
+version 3.0
+
+qubit[17] q
+bit[1] b
+
+Ry(3.1415927) q[1]
+b[0] = measure q[1]

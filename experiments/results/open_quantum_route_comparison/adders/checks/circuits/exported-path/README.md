@@ -1,0 +1,5 @@
+# exported-path circuits (superseded, kept for the record)
+
+These are the ORIGINAL 14 preflight circuits from the third-pass correction: each is a builder's end-to-end raw QASM (operand preparation + adder body together) transpiled AS ONE CIRCUIT to its target basis -- "the path that reproduces the original submission style" (i.e. what you get by taking a framework's exported QASM and transpiling it whole, prep included).
+
+The fourth-pass correction found this confounds operand preparation with the arithmetic body for `qiskit/cdkm`: the leading operand `x` gates can be folded into the Euler (h/rz) synthesis of the adder body's own first gate on the same wire, so stripping `rz` can destroy the operand encoding, not just the arithmetic body. See `../controlled/` for the corrected construction, which physically separates preparation from the compiled body and is the default/recommended submission set. These files are kept here for the historical record only -- see the recommendation in `offline_checks.md`.

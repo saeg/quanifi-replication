@@ -1,0 +1,212 @@
+[
+  {
+    "case_id": "0+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "5b787fce-b6c4-4197-8eda-147d4f2b1a81",
+    "kind": "control",
+    "label": "cdkm@0+0",
+    "preparation_id": "5fac2807-9422-43ab-a11c-7a6edd5bc6e4",
+    "version_id": "cdkm"
+  },
+  {
+    "case_id": "0+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "fd4a0c13-c4c0-4d3a-8b49-6306edc8d249",
+    "kind": "control",
+    "label": "qft@0+0",
+    "preparation_id": "b38faaf0-a6d8-4d3c-830c-bb7eff824028",
+    "version_id": "qft"
+  },
+  {
+    "case_id": "0+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "ada435ea-0872-468e-b38b-4305f509b234",
+    "kind": "control",
+    "label": "semiadder@0+0",
+    "preparation_id": "1a1ca23b-0a12-40a1-8e2b-38790aaf3642",
+    "version_id": "semiadder"
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "c2a0685c-7b20-4b8d-8883-33152b1f6ffc",
+    "kind": "control",
+    "label": "cdkm@0+3",
+    "preparation_id": "7bfefd1b-9055-4535-a47c-95e1055b27fc",
+    "version_id": "cdkm"
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "f867764a-fdac-4de6-a215-0dab91876677",
+    "kind": "control",
+    "label": "qft@0+3",
+    "preparation_id": "5fa2df00-56b3-4d2c-8e4d-8b4255c2e9c7",
+    "version_id": "qft"
+  },
+  {
+    "case_id": "0+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "db813081-a9e0-4560-a7a9-84d14d1dcc77",
+    "kind": "control",
+    "label": "semiadder@0+3",
+    "preparation_id": "d15cccb9-83fd-4f9d-9978-579e118cfc23",
+    "version_id": "semiadder"
+  },
+  {
+    "case_id": "1+1",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "4d23c5e4-f3d4-4570-8488-23492eb3dd72",
+    "kind": "control",
+    "label": "cdkm@1+1",
+    "preparation_id": "9ac7de8a-69de-4893-ad1e-af52b1ea71f5",
+    "version_id": "cdkm"
+  },
+  {
+    "case_id": "1+1",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "02ecb118-7adc-40c1-97bc-ddaf7714b9c6",
+    "kind": "control",
+    "label": "qft@1+1",
+    "preparation_id": "d3e290b6-fbbe-4556-b551-444f8a250b5c",
+    "version_id": "qft"
+  },
+  {
+    "case_id": "1+1",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "ddf0e6f7-1c2d-4153-b879-3fd9e4dbb720",
+    "kind": "control",
+    "label": "semiadder@1+1",
+    "preparation_id": "c6ee1e13-6fad-44ee-91c5-c60e0a49dca2",
+    "version_id": "semiadder"
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "f1f14460-8d33-4977-afae-b2f2422a0d51",
+    "kind": "control",
+    "label": "cdkm@1+3",
+    "preparation_id": "d25351c9-a772-4eb5-ac5a-252e6aa6bca9",
+    "version_id": "cdkm"
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "6d536c30-6b5d-437f-9bff-4f65022024c4",
+    "kind": "control",
+    "label": "qft@1+3",
+    "preparation_id": "a305ecde-8cc6-415c-8281-67e5276f9fba",
+    "version_id": "qft"
+  },
+  {
+    "case_id": "1+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "48937f5d-a5c6-4bf6-beb2-b38a77725361",
+    "kind": "control",
+    "label": "semiadder@1+3",
+    "preparation_id": "1624a5ab-f412-4678-99e7-4c637c3469b6",
+    "version_id": "semiadder"
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "acd565b3-439e-40e8-a1b1-038294ba0966",
+    "kind": "control",
+    "label": "cdkm@3+0",
+    "preparation_id": "4dc9c0aa-3141-4043-8ae0-78b6feaa0cf4",
+    "version_id": "cdkm"
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "0d5c98c0-b173-4c2d-879d-40829f0abae7",
+    "kind": "control",
+    "label": "qft@3+0",
+    "preparation_id": "a9c5f001-544a-4faf-902c-d923c7317e20",
+    "version_id": "qft"
+  },
+  {
+    "case_id": "3+0",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "fd1e0c9c-22fe-4146-b8d9-037545e6a251",
+    "kind": "control",
+    "label": "semiadder@3+0",
+    "preparation_id": "79d59473-d95c-40b9-8154-66253d15af91",
+    "version_id": "semiadder"
+  },
+  {
+    "case_id": "3+1",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "93a359f8-b830-4ea1-9e5f-2d807824a95a",
+    "kind": "control",
+    "label": "cdkm@3+1",
+    "preparation_id": "720fed63-b13b-48ce-bf67-2783b005c2af",
+    "version_id": "cdkm"
+  },
+  {
+    "case_id": "3+1",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "0b10191f-36b3-4048-8145-26876345f6e7",
+    "kind": "control",
+    "label": "qft@3+1",
+    "preparation_id": "22c407b1-a7f2-44fb-b306-efd821f1ddbb",
+    "version_id": "qft"
+  },
+  {
+    "case_id": "3+1",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "332fab74-6257-47ec-a91e-a1ec23d82f3f",
+    "kind": "control",
+    "label": "semiadder@3+1",
+    "preparation_id": "e17be37a-7f06-4f72-948a-ae10ebe141c4",
+    "version_id": "semiadder"
+  },
+  {
+    "case_id": "3+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "bee36c46-ad84-4e14-a267-561cfc0a85ba",
+    "kind": "control",
+    "label": "cdkm@3+3",
+    "preparation_id": "47d4834f-aeea-48a5-9b13-f488f9739e8f",
+    "version_id": "cdkm"
+  },
+  {
+    "case_id": "3+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "e15c1795-01ab-4c64-a9d7-d7f3572e395b",
+    "kind": "control",
+    "label": "qft@3+3",
+    "preparation_id": "82454395-fc30-4347-aa2d-4eb1593fa33c",
+    "version_id": "qft"
+  },
+  {
+    "case_id": "3+3",
+    "enters_confirmatory_analysis": false,
+    "exploratory": true,
+    "job_id": "7aa94349-f5b7-4a4f-a973-be1ed3afd8f0",
+    "kind": "control",
+    "label": "semiadder@3+3",
+    "preparation_id": "f17df8e6-6b5f-4eee-9c78-6747b9222d34",
+    "version_id": "semiadder"
+  }
+]

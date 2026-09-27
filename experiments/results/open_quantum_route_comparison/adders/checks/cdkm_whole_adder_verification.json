@@ -1,0 +1,65 @@
+[
+  {
+    "bit_width": 1,
+    "a": 0,
+    "b": 0,
+    "result_qubits": [
+      1,
+      2
+    ],
+    "correct_bitstring": "00",
+    "P_correct": 1.0,
+    "gate_counts": {
+      "cx": 5,
+      "ccx": 2
+    }
+  },
+  {
+    "bit_width": 1,
+    "a": 0,
+    "b": 1,
+    "result_qubits": [
+      1,
+      2
+    ],
+    "correct_bitstring": "10",
+    "P_correct": 1.0,
+    "gate_counts": {
+      "cx": 5,
+      "ccx": 2,
+      "x": 1
+    }
+  },
+  {
+    "bit_width": 1,
+    "a": 1,
+    "b": 0,
+    "result_qubits": [
+      1,
+      2
+    ],
+    "correct_bitstring": "10",
+    "P_correct": 1.0,
+    "gate_counts": {
+      "cx": 5,
+      "ccx": 2,
+      "x": 1
+    }
+  },
+  {
+    "bit_width": 1,
+    "a": 1,
+    "b": 1,
+    "result_qubits": [
+      1,
+      2
+    ],
+    "correct_bitstring": "01",
+    "P_correct": 1.0,
+    "gate_counts": {
+      "cx": 5,
+      "x": 2,
+      "ccx": 2
+    }
+  }
+]

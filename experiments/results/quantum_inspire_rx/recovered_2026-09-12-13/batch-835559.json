@@ -1,0 +1,44 @@
+{
+ "schema": "qi-recovered-batch/v1",
+ "recovered_at": "2026-09-26T04:47:56.999876+00:00",
+ "source": "Quantum Inspire compute API (read_batch_jobs, read_jobs, read_results_by_job_id, read_files)",
+ "backend": "Tuna-17",
+ "batch_job_id": 835559,
+ "batch_created_on": "2026-09-13T02:00:19.747257+00:00",
+ "batch_finished_at": "2026-09-13T02:01:58.518106+00:00",
+ "jobs": [
+  {
+   "job_id": 1442896,
+   "shots": 1024,
+   "counts_as_returned": {
+    "00": 950,
+    "01": 42,
+    "10": 27,
+    "11": 5
+   },
+   "cqasm": "version 3.0\n\nqubit[17] q\nbit[2] b\n\nRz(1.0113757) q[0]\nRy(-1.5707963) q[0]\nRz(0.76948328) q[1]\nRy(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRy(1.5707963) q[0]\nRz(-1.5707963) q[0]\nRy(1.5707963) q[1]\nRz(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRx(1.5707963) q[0]\nRz(2.3402796) q[0]\nRx(1.5707963) q[1]\nRz(2.582172) q[1]\nbarrier q[1]\nbarrier q[0]\nb[0] = measure q[1]\nb[1] = measure q[0]\n"
+  },
+  {
+   "job_id": 1442897,
+   "shots": 1024,
+   "counts_as_returned": {
+    "00": 969,
+    "01": 25,
+    "10": 22,
+    "11": 8
+   },
+   "cqasm": "version 3.0\n\nqubit[17] q\nbit[2] b\n\nRy(-1.5707963) q[0]\nRy(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRy(1.5707963) q[0]\nRz(-1.5707963) q[0]\nRy(1.5707963) q[1]\nRz(-1.5707963) q[1]\nCR(3.1415927) q[0], q[1]\nRx(1.5707963) q[0]\nRz(2.3402796) q[0]\nRx(1.5707963) q[1]\nRz(2.582172) q[1]\nbarrier q[1]\nbarrier q[0]\nb[0] = measure q[1]\nb[1] = measure q[0]\n"
+  },
+  {
+   "job_id": 1442898,
+   "shots": 1024,
+   "counts_as_returned": {
+    "00": 22,
+    "01": 23,
+    "10": 28,
+    "11": 951
+   },
+   "cqasm": "version 3.0\n\nqubit[17] q\nbit[2] b\n\nH q[1]\nCNOT q[1], q[0]\nRy(-1.5707963) q[0]\nRy(1.5707963) q[1]\nCNOT q[1], q[0]\nRz(3.1415927) q[0]\nRy(-1.5707963) q[1]\nbarrier q[1]\nbarrier q[0]\nb[0] = measure q[1]\nb[1] = measure q[0]\n"
+  }
+ ]
+}

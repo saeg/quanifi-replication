@@ -1,0 +1,464 @@
+{
+  "garnet_backend": "iqm:garnet",
+  "shots": 512,
+  "shot_probe_note": "First live preflight (qiskit_cdkm-bw1-a0-b0-decomposed, shots=512): status=pass. No indication the platform's accepted/priced shot count differs from 512 for this backend; used unchanged for the whole selection.",
+  "circuits": [
+    {
+      "name": "qiskit_cdkm-bw1-a0-b0-decomposed",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 0,
+      "b": 0,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "sanity anchor (all-zero operands) [decomposed form]",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "qiskit_cdkm-bw1-a0-b0-whole",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 0,
+      "b": 0,
+      "form": "whole",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "sanity anchor (all-zero operands) [whole form]",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "qiskit_cdkm-bw1-a0-b1-decomposed",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 0,
+      "b": 1,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=False visible=False (predicts '10' at p=1.0000, P_correct=1.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "qiskit_cdkm-bw1-a0-b1-whole",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 0,
+      "b": 1,
+      "form": "whole",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=False visible=False (predicts '10' at p=1.0000, P_correct=1.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "qiskit_cdkm-bw1-a1-b0-decomposed",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 1,
+      "b": 0,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=True (predicts '11' at p=1.0000, P_correct=0.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "qiskit_cdkm-bw1-a1-b0-whole",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 1,
+      "b": 0,
+      "form": "whole",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=True (predicts '11' at p=1.0000, P_correct=0.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "qiskit_cdkm-bw1-a1-b1-decomposed",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 1,
+      "b": 1,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=False visible=False (predicts '01' at p=1.0000, P_correct=1.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "qiskit_cdkm-bw1-a1-b1-whole",
+      "builder": "qiskit/cdkm",
+      "bit_width": 1,
+      "a": 1,
+      "b": 1,
+      "form": "whole",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=False visible=False (predicts '01' at p=1.0000, P_correct=1.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "pennylane_outadder-bw1-a0-b0-decomposed",
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 0,
+      "b": 0,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "sanity anchor (all-zero operands)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "pennylane_outadder-bw1-a0-b1-decomposed",
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 0,
+      "b": 1,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=True (predicts '00' at p=1.0000, P_correct=0.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "pennylane_outadder-bw1-a1-b0-decomposed",
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 1,
+      "b": 0,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=True (predicts '00' at p=1.0000, P_correct=0.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "pennylane_outadder-bw1-a1-b1-decomposed",
+      "builder": "pennylane/outadder",
+      "bit_width": 1,
+      "a": 1,
+      "b": 1,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=True (predicts '00' at p=1.0000, P_correct=0.0000)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "cirq_qft-bw1-a0-b0-decomposed",
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 0,
+      "b": 0,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "sanity anchor (all-zero operands)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "cirq_qft-bw1-a0-b1-decomposed",
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 0,
+      "b": 1,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=False (predicts '10' at p=0.2500, P_correct=0.2500)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "cirq_qft-bw1-a1-b0-decomposed",
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 1,
+      "b": 0,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=False (predicts '00' at p=0.2500, P_correct=0.2500)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "cirq_qft-bw1-a1-b1-decomposed",
+      "builder": "cirq/qft",
+      "bit_width": 1,
+      "a": 1,
+      "b": 1,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "selected: rz-strip hypothesis model detectable=True visible=False (predicts '10' at p=0.2500, P_correct=0.2500)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "toffoli-raw",
+      "builder": "toffoli-reproducer",
+      "bit_width": null,
+      "a": null,
+      "b": null,
+      "form": "raw",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "shared control pair, copied byte-for-byte from experiments/results/open_quantum_cepheus_discovery/toffoli_probe/circuits/A_toffoli_raw_ccx.qasm (never regenerated/re-transpiled)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    },
+    {
+      "name": "toffoli-decomposed",
+      "builder": "toffoli-reproducer",
+      "bit_width": null,
+      "a": null,
+      "b": null,
+      "form": "decomposed",
+      "backend": "iqm:garnet",
+      "shots": 512,
+      "note": "shared control pair, copied byte-for-byte from experiments/results/open_quantum_cepheus_discovery/toffoli_probe/circuits/B_toffoli_decomposed.qasm (never regenerated/re-transpiled)",
+      "status": "pass",
+      "price": 1,
+      "message": null,
+      "quote": [
+        {
+          "name": "Public Plan",
+          "price": 1
+        },
+        {
+          "name": "Private Plan",
+          "price": 2
+        }
+      ]
+    }
+  ],
+  "total_price": 18,
+  "rigetti_backend_param_check": {
+    "builder": "qiskit/cdkm",
+    "bit_width": 1,
+    "a": 0,
+    "b": 0,
+    "form": "decomposed",
+    "backend": "rigetti:cepheus-1-108q",
+    "shots": 512,
+    "status": "pass",
+    "price": 1,
+    "message": null,
+    "quote": [
+      {
+        "name": "Public Plan",
+        "price": 1
+      },
+      {
+        "name": "Private Plan",
+        "price": 1
+      }
+    ]
+  },
+  "circuits_dir": "experiments/results/open_quantum_route_comparison/adders/checks/circuits/controlled",
+  "note": "Fourth-pass correction: this selection is now built from experiments/results/openquantum/adder-defect-checks/circuits/controlled/ (operand-prep/body-separated circuits), data-selected per build_controlled_final_selection -- not the old fixed 14-tuple. The prior (possibly-confounded) circuits live in circuits/exported-path/ and are no longer preflighted here."
+}
